@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Sora:wght@300;400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"text-tertiary":"#625E54","error-container":"#93000a","on-tertiary-container":"#004f5d","surface-bright":"#39393b","surface-dim":"#131315","on-tertiary-fixed-variant":"#004e5c","primary-fixed":"#ffddb4","on-surface":"#e5e1e4","on-secondary":"#003824","surface-tint":"#ffb955","primary-container":"#f5a623","tertiary-container":"#32c6e5","background":"#131315","on-error":"#690005","outline-variant":"#524534","border-subtle":"#272732","on-background":"#e5e1e4","secondary-container":"#00a572","surface-container":"#201f21","on-primary":"#452b00","secondary-fixed-dim":"#4edea3","inverse-surface":"#e5e1e4","text-primary":"#F7F5F0","on-secondary-fixed-variant":"#005236","tertiary":"#66e1ff","on-tertiary":"#003640","tertiary-fixed":"#acedff","inverse-on-surface":"#313032","surface-hover":"#242430","secondary":"#4edea3","on-secondary-fixed":"#002113","tertiary-fixed-dim":"#4cd7f6","surface-container-high":"#2a2a2c","surface-overlay":"#1A1A22","on-error-container":"#ffdad6","border-luminous":"rgba(245, 166, 35, 0.35)","gold-muted":"#D4AF5A","surface-raised":"#121216","surface-container-highest":"#353437","on-secondary-container":"#00311f","text-secondary":"#96907F","surface-container-lowest":"#0e0e10","secondary-fixed":"#6ffbbe","primary":"#ffc880","status-cyan":"#06B6D4","primary-fixed-dim":"#ffb955","surface-container-low":"#1c1b1d","on-primary-container":"#644000","amber-highlight":"#FFB946","outline":"#9f8e7a","status-emerald":"#10B981","on-surface-variant":"#d7c3ae","on-primary-fixed":"#291800","on-tertiary-fixed":"#001f26","surface-variant":"#353437","error":"#ffb4ab","surface":"#131315","inverse-primary":"#835500","on-primary-fixed-variant":"#633f00","surface-base":"#0A0A0C"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-lg":"2.5rem","space-3xl":"4.5rem","space-xs":"0.5rem","space-2xl":"3rem","gutter-sm":"1rem","space-2xs":"0.25rem","space-xl":"2rem","space-sm":"0.75rem",gutter:"1.5rem","space-lg":"1.5rem","margin-mobile":"1.25rem",margin:"2rem","space-md":"1rem"},fontFamily:{"display-hero":["Newsreader"],"label-mono-sm":["Space Mono"],"body-lg":["Sora"],"display-hero-mobile":["Newsreader"],"headline-md":["Newsreader"],"headline-lg":["Newsreader"],"stat-metric":["Space Mono"],"label-mono-lg":["Space Mono"],"body-sm":["Sora"],"body-md":["Sora"],"headline-sm":["Sora"]},fontSize:{"display-hero":["64px",{lineHeight:"72px",letterSpacing:"-0.02em",fontWeight:"400"}],"label-mono-sm":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-hero-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"400"}],"stat-metric":["32px",{lineHeight:"36px",fontWeight:"700"}],"label-mono-lg":["13px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface-base font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-base/85 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs group" data-path="platform" href="#"><div class="w-8 h-8 rounded-lg bg-surface-overlay border border-border-luminous flex items-center justify-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><span class="material-symbols-outlined text-primary text-[18px]">hub</span></div><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-semibold">Recruit</span></a><div class="hidden xl:flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-raised border border-border-subtle"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-emerald opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-status-emerald"></span></span><span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">All systems operational</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-overlay text-text-primary rounded-lg border border-border-subtle shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="platform" href="#">Platform</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="all-in-one" href="#">All-in-One</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="white-label" href="#">White Label</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="security-and-trust" href="#">Security &amp; Trust</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="pricing-and-plans" href="#">Pricing &amp; Plans</a></nav><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-raised border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-tertiary cursor-pointer hover:border-outline transition-colors"><span class="material-symbols-outlined text-[14px]">search</span><span>Search</span><kbd class="px-1 py-0.5 rounded bg-surface-container font-label-mono-sm text-label-mono-sm text-text-secondary">⌘K</kbd></div><a class="hidden md:inline-block font-body-md text-body-md text-text-secondary hover:text-text-primary transition-colors px-space-xs py-space-2xs" data-path="sign-in" href="#">Sign in</a><a class="inline-flex items-center px-space-sm py-space-xs rounded bg-primary-container text-surface-base font-body-md text-body-md font-semibold hover:bg-amber-highlight transition-all shadow-[0_0_20px_rgba(245,166,35,0.25)] hover:shadow-[0_0_24px_rgba(245,166,35,0.4)]" data-path="book-a-demo" href="#">Book a demo</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-base"><div class="flex flex-col w-full">
+<!-- Top Hero Architectural Scrim Section -->
+<section class="relative w-full pt-space-3xl pb-space-2xl px-6 lg:px-12 overflow-hidden border-b border-border-subtle bg-surface-base">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[840px] h-[360px] bg-gradient-to-b from-primary/10 via-amber-highlight/5 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="max-w-7xl mx-auto w-full relative z-10">
+<!-- System Tag & Breadcrumb -->
+<div class="flex items-center gap-space-xs mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-1 rounded bg-surface-raised border border-border-subtle font-label-mono-sm text-label-mono-sm text-amber-highlight tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-status-emerald animate-pulse"></span>
+          06 / TRUST ARCHITECTURE
+        </span>
+<span class="text-text-tertiary font-label-mono-sm text-label-mono-sm">·</span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase">SOVEREIGN CANDIDATE INTELLIGENCE</span>
+</div>
+<!-- Main Typography Lockup -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-end mb-space-2xl">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg lg:text-[56px] lg:leading-[64px] text-text-primary tracking-tight font-headline-lg">
+            Serious about <span class="italic text-primary">candidate data.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-3xl">
+            In executive search and recruitment, candidate trust is your balance sheet. Recruit was architected from day one so contact details never touch external AI models, agency pools remain cryptographically isolated, and every compliance tier is provable.
+          </p>
+</div>
+<div class="lg:col-span-4 flex lg:flex-col items-start lg:items-end justify-between lg:justify-end gap-space-sm">
+<div class="text-left lg:text-right">
+<span class="block font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase tracking-wider">DATABASE INTEGRITY</span>
+<span class="font-stat-metric text-stat-metric text-text-primary font-bold">100% ISOLATED</span>
+</div>
+<a class="inline-flex items-center gap-2 px-space-md py-space-xs rounded bg-primary-container text-surface-base font-body-md text-body-md font-semibold hover:bg-amber-highlight transition-all shadow-[0_0_20px_rgba(245,166,35,0.25)]" href="#demo">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+            Request Security Audit Log
+          </a>
+</div>
+</div>
+<!-- Compliance Credential Badges Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs pt-space-lg border-t border-border-subtle">
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-raised/70 border border-border-subtle">
+<span class="material-symbols-outlined text-primary text-[20px]">public</span>
+<div>
+<div class="font-label-mono-lg text-label-mono-lg text-text-primary">Frankfurt, EU</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-secondary">Sovereign Cloud (DE)</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-raised/70 border border-border-subtle">
+<span class="material-symbols-outlined text-status-emerald text-[20px]">delete_sweep</span>
+<div>
+<div class="font-label-mono-lg text-label-mono-lg text-text-primary">GDPR Art. 17</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-secondary">Cryptographic Erasure</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-raised/70 border border-border-subtle">
+<span class="material-symbols-outlined text-status-cyan text-[20px]">verified_user</span>
+<div>
+<div class="font-label-mono-lg text-label-mono-lg text-text-primary">SOCPA Verified</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-secondary">KSA/GCC Compliance</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs rounded bg-surface-raised/70 border border-border-subtle">
+<span class="material-symbols-outlined text-amber-highlight text-[20px]">block</span>
+<div>
+<div class="font-label-mono-lg text-label-mono-lg text-text-primary">Zero Model Training</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-secondary">LLM Ingestion Blocked</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Data Redaction Shield & Architecture Visualization -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-dim relative border-b border-border-subtle">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest block mb-1">PILLAR 01 // DATA PATHWAY</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+            The Pre-AI In-Memory Redaction Shield
+          </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl mt-space-xs">
+            Direct candidate contact details never enter the vector pipeline or LLM context window. Our deterministic zero-footprint memory filter masks PII prior to external inference and reconciles downstream.
+          </p>
+</div>
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-full bg-surface-raised border border-border-subtle">
+<span class="w-2 h-2 rounded-full bg-status-emerald"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase">Deterministic Pipeline: ACTIVE</span>
+</div>
+</div>
+<!-- Architectural Interactive Flow Diagram -->
+<div class="w-full bg-surface-base rounded-xl border border-border-subtle p-space-lg lg:p-space-xl shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05)]">
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-space-md relative">
+<!-- Step 1: Raw Intake -->
+<div class="flex flex-col gap-space-sm bg-surface-raised p-space-md rounded-lg border border-border-subtle">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">01. INTAKE</span>
+<span class="material-symbols-outlined text-text-secondary text-[18px]">description</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Raw CV Source</h4>
+<div class="p-space-xs bg-surface-dim rounded border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary space-y-1">
+<div class="text-text-primary font-bold">Sara Al-Harbi</div>
+<div class="text-error bg-error/10 px-1 rounded inline-block">+966 50 123 4567</div>
+<div class="text-error bg-error/10 px-1 rounded inline-block">sara.h@example.com</div>
+<div class="text-text-tertiary">Riyadh, Saudi Arabia</div>
+<div class="text-text-secondary truncate">SOCPA Certified, 5y listed FMCG...</div>
+</div>
+<span class="font-body-sm text-body-sm text-text-tertiary">Multipart encrypted upload over TLS 1.3 straight to sovereign volume.</span>
+</div>
+<!-- Step 2: Redaction Engine -->
+<div class="flex flex-col gap-space-sm bg-surface-overlay p-space-md rounded-lg border border-border-luminous relative shadow-[0_0_24px_rgba(245,166,35,0.08)]">
+<div class="absolute -top-3 right-3 px-2 py-0.5 rounded bg-primary-container text-surface-base font-label-mono-sm text-label-mono-sm font-bold uppercase">
+              Shield Guard
+            </div>
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-amber-highlight">02. MEMORY FILTER</span>
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">shield</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Redaction Engine</h4>
+<div class="p-space-xs bg-surface-raised rounded border border-border-subtle font-label-mono-sm text-label-mono-sm space-y-1">
+<div class="text-status-emerald flex items-center justify-between"><span>NAME</span><span class="text-text-tertiary">[MASKED_ID_884]</span></div>
+<div class="text-status-emerald flex items-center justify-between"><span>PHONE</span><span class="text-text-tertiary">[REDACTED_TEL]</span></div>
+<div class="text-status-emerald flex items-center justify-between"><span>EMAIL</span><span class="text-text-tertiary">[REDACTED_MAIL]</span></div>
+<div class="text-status-emerald flex items-center justify-between"><span>SOCIAL</span><span class="text-text-tertiary">[REDACTED_URL]</span></div>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">Ephemeral in-memory parser. Zero disk persistence of regex matches.</span>
+</div>
+<!-- Step 3: Clean Payload -->
+<div class="flex flex-col gap-space-sm bg-surface-raised p-space-md rounded-lg border border-border-subtle">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">03. SANITIZED</span>
+<span class="material-symbols-outlined text-status-cyan text-[18px]">verified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Semantic Traits</h4>
+<div class="p-space-xs bg-surface-dim rounded border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary space-y-1">
+<div class="text-text-primary">ANONYMIZED_CANDIDATE_884</div>
+<div class="text-amber-highlight">Core: SOCPA Acc. 2021</div>
+<div class="text-text-secondary">Seniority: Senior / Lead</div>
+<div class="text-text-secondary">Track: IFRS-16, Month-end</div>
+<div class="text-text-secondary">Notice: 30-Days Passed</div>
+</div>
+<span class="font-body-sm text-body-sm text-text-tertiary">Professional qualifications and evidence-ready sentences only.</span>
+</div>
+<!-- Step 4: AI Model Evaluation -->
+<div class="flex flex-col gap-space-sm bg-surface-raised p-space-md rounded-lg border border-border-subtle">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">04. INFERENCE</span>
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">LLM Ranker</h4>
+<div class="p-space-xs bg-surface-dim rounded border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary space-y-1">
+<div class="text-status-emerald">Match Score: 91%</div>
+<div class="text-text-tertiary">Cited Reasons: SOCPA p.1</div>
+<div class="text-text-tertiary">FMCG Listed Exp: Met</div>
+<div class="text-amber-highlight">Gap Flag: No Oracle Fusion</div>
+<div class="text-text-tertiary">Zero Retention: Enforced</div>
+</div>
+<span class="font-body-sm text-body-sm text-text-tertiary">Enterprise zero-data-retention API. No LLM training rights.</span>
+</div>
+<!-- Step 5: Database Rehydration -->
+<div class="flex flex-col gap-space-sm bg-surface-raised p-space-md rounded-lg border border-border-subtle">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">05. SECURE VAULT</span>
+<span class="material-symbols-outlined text-status-emerald text-[18px]">dns</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">RLS Rehydration</h4>
+<div class="p-space-xs bg-surface-dim rounded border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary space-y-1">
+<div class="text-text-primary">PostgreSQL Instance</div>
+<div class="text-text-secondary">Agency RLS Key: 0x9AF4</div>
+<div class="text-status-emerald">Contact Unlocked: Internal</div>
+<div class="text-text-secondary">Sara Al-Harbi (Restored)</div>
+<div class="text-text-tertiary">Audit ID: #AUD-2025-991</div>
+</div>
+<span class="font-body-sm text-body-sm text-text-tertiary">Only authenticated agency recruiters with clearance view identity.</span>
+</div>
+</div>
+<!-- Metric strip beneath diagram -->
+<div class="mt-space-lg pt-space-md border-t border-border-subtle flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">PII LEAK CHANCE:</span>
+<span class="font-label-mono-lg text-label-mono-lg text-status-emerald">0.000%</span>
+</div>
+<span class="text-text-tertiary">|</span>
+<div class="flex items-center gap-2">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">PIPELINE LATENCY:</span>
+<span class="font-label-mono-lg text-label-mono-lg text-text-primary">&lt; 14ms Redaction Overhead</span>
+</div>
+</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-secondary">
+            Verified by Sovereign Cryptographic Hash · SHA-256 Engine Sign
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- The 4 Pillars of Data Governance (Bento Grid) -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-base border-b border-border-subtle">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<span class="font-label-mono-sm text-label-mono-sm text-amber-highlight tracking-widest uppercase">PILLARS 02 — 04 // DEFENSE-IN-DEPTH</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+          Deterministic boundaries. Hardware-level assurance.
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          Candidate confidentiality is not a software setting; it is an architectural contract implemented in Germany and audited under GCC sovereign regulations.
+        </p>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Bento 1: Frankfurt EU Sovereign Hosting -->
+<div class="md:col-span-2 bg-surface-raised p-space-xl rounded-xl border border-border-subtle relative flex flex-col justify-between overflow-hidden group hover:border-outline transition-all">
+<div class="absolute top-0 right-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay border border-border-subtle flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[22px]">location_city</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-status-emerald px-2 py-0.5 rounded bg-status-emerald/10 border border-status-emerald/20">
+                EU-CENTRAL-1 PINNED
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-space-xs">
+              Frankfurt Sovereign Region Guarantee
+            </h3>
+<p class="font-body-md text-body-md text-text-secondary max-w-xl mb-space-lg">
+              Database instances (<span class="font-label-mono-sm text-text-primary">PostgreSQL 16 with pgvector</span>), file storage buckets, and inference queues operate strictly inside Frankfurt, Germany. Compute workers are pinned to sovereign infrastructure with no trans-Atlantic hops.
+            </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-md border-t border-border-subtle font-label-mono-sm text-label-mono-sm">
+<div>
+<span class="text-text-tertiary block">DATABASE ENGINE</span>
+<span class="text-text-primary font-bold">PostgreSQL + pgvector</span>
+</div>
+<div>
+<span class="text-text-tertiary block">BLOB ENCRYPTION</span>
+<span class="text-text-primary font-bold">AES-256-GCM / KMS</span>
+</div>
+<div>
+<span class="text-text-tertiary block">CROSS-BORDER JURISDICTION</span>
+<span class="text-status-emerald font-bold">None (EU Boundary)</span>
+</div>
+</div>
+</div>
+<!-- Bento 2: Multi-Agency Row-Level Security -->
+<div class="bg-surface-raised p-space-xl rounded-xl border border-border-subtle flex flex-col justify-between group hover:border-outline transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay border border-border-subtle flex items-center justify-center">
+<span class="material-symbols-outlined text-amber-highlight text-[22px]">lock</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">RLS ENFORCED</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-space-xs">
+              Cryptographic RLS Isolation
+            </h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md">
+              Not soft application-level logic. Every SQL query executes with agency tenant context down in the engine kernel.
+            </p>
+<div class="p-space-xs bg-surface-base rounded border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary">
+<code>SET LOCAL app.current_tenant_id = 'agency_9x7'; SELECT * FROM candidates;</code>
+<div class="text-status-cyan mt-1">// Querying outside tenant yields 0 rows natively.</div>
+</div>
+</div>
+<div class="pt-space-md border-t border-border-subtle text-text-tertiary font-label-mono-sm text-label-mono-sm">
+            Zero cross-agency data bleed risk.
+          </div>
+</div>
+<!-- Bento 3: Right-to-Erasure (GDPR Art. 17) -->
+<div class="bg-surface-raised p-space-xl rounded-xl border border-border-subtle flex flex-col justify-between group hover:border-outline transition-all">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay border border-border-subtle flex items-center justify-center">
+<span class="material-symbols-outlined text-error text-[22px]">delete_forever</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-error px-2 py-0.5 rounded bg-error/10 border border-error/20">
+                HARD PURGE
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-text-primary mb-space-xs">
+              True Right-to-Erasure
+            </h3>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-md">
+              Soft-deletes with ghost retention violate trust. When an admin executes a purge under GDPR Article 17, our engine simultaneously cascades:
+            </p>
+<ul class="space-y-1 font-body-sm text-body-sm text-text-secondary">
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-status-emerald text-[14px]">check</span> Relational Candidate Rows</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-status-emerald text-[14px]">check</span> S3/MinIO Stored CV Files</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-status-emerald text-[14px]">check</span> pgvector 1536-dim Embeddings</li>
+<li class="flex items-center gap-1.5"><span class="material-symbols-outlined text-status-emerald text-[14px]">check</span> Cached Ranking Reasoning Chains</li>
+</ul>
+</div>
+<div class="pt-space-md border-t border-border-subtle font-label-mono-sm text-label-mono-sm text-text-secondary">
+            Tamper-evident audit log emitted automatically.
+          </div>
+</div>
+<!-- Bento 4: SOCPA & Regional Saudi Frameworks -->
+<div class="md:col-span-2 bg-surface-raised p-space-xl rounded-xl border border-border-subtle flex flex-col justify-between relative overflow-hidden group hover:border-outline transition-all">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md mb-space-md">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-status-cyan uppercase">GCC &amp; KSA LOCALIZATION</span>
+<h3 class="font-headline-md text-headline-md text-text-primary">
+                SOCPA &amp; Saudi Privacy Framework Ready
+              </h3>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-space-xs py-1 rounded bg-surface-base border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-primary">PDPL Compliant</span>
+<span class="px-space-xs py-1 rounded bg-surface-base border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-primary">SOCPA Verified</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-text-secondary mb-space-md">
+            Built directly with tier-one Riyadh executive search design partners. Recruit adheres strictly to Saudi Arabia Personal Data Protection Law (PDPL) principles, including explicit candidate consent capturing, cross-border transmission controls, and residency safeguards.
+          </p>
+<div class="p-space-sm bg-surface-base rounded-lg border border-border-subtle flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Field Note / GCC Compliance Engine:</span>
+<span class="font-label-mono-sm text-label-mono-sm text-amber-highlight">Saudi National ID &amp; Iqama Auto-Scrubbing Enabled</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Compliance & Sub-Processor Governance Matrix -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-dim border-b border-border-subtle">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-amber-highlight uppercase tracking-wider block mb-1">AUDIT EVIDENCE</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+            Compliance &amp; Governance Matrix
+          </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl mt-1">
+            Contractual guarantees backing every search firm using Recruit. Independent SOC-2 Type II audit logs available upon mutual NDA.
+          </p>
+</div>
+<div class="font-label-mono-sm text-label-mono-sm text-text-tertiary">
+          LAST AUDIT CYCLE: Q1 2025 · PASSED
+        </div>
+</div>
+<!-- Governance Table Container -->
+<div class="w-full overflow-x-auto rounded-xl border border-border-subtle bg-surface-raised shadow-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-border-subtle bg-surface-base/80 font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase">
+<th class="p-space-md">Regulation / Directive</th>
+<th class="p-space-md">Core Mandate</th>
+<th class="p-space-md">Recruit Implementation</th>
+<th class="p-space-md">Audit Verification</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle font-body-md text-body-md">
+<tr class="hover:bg-surface-hover/50 transition-colors">
+<td class="p-space-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">gavel</span>
+                GDPR Article 15 (Right to Access)
+              </td>
+<td class="p-space-md text-text-secondary">Individual data discovery &amp; export portability.</td>
+<td class="p-space-md text-text-primary">
+                1-click JSON/PDF Machine-Readable Export containing full agency timeline and notes.
+              </td>
+<td class="p-space-md font-label-mono-sm text-label-mono-sm text-status-emerald">Automated Engine Check</td>
+</tr>
+<tr class="hover:bg-surface-hover/50 transition-colors">
+<td class="p-space-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">lock_reset</span>
+                GDPR Article 17 (Right to Erasure)
+              </td>
+<td class="p-space-md text-text-secondary">Obligation to delete PII and vectorized duplicates.</td>
+<td class="p-space-md text-text-primary">
+                Admin-initiated atomic hard-delete cascade across SQL, object buckets, and pgvector embeddings.
+              </td>
+<td class="p-space-md font-label-mono-sm text-label-mono-sm text-status-emerald">Cryptographic Zero-Check</td>
+</tr>
+<tr class="hover:bg-surface-hover/50 transition-colors">
+<td class="p-space-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-status-cyan text-[18px]">shield</span>
+                KSA Personal Data Protection (PDPL)
+              </td>
+<td class="p-space-md text-text-secondary">GCC sovereignty, explicit consent &amp; purpose limitation.</td>
+<td class="p-space-md text-text-primary">
+                Consent flags required on candidate application portal; regional data partitioning.
+              </td>
+<td class="p-space-md font-label-mono-sm text-label-mono-sm text-status-emerald">SOCPA Compliance Attested</td>
+</tr>
+<tr class="hover:bg-surface-hover/50 transition-colors">
+<td class="p-space-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">neurology</span>
+                Model Training Prohibition
+              </td>
+<td class="p-space-md text-text-secondary">Zero retention for foundational model training.</td>
+<td class="p-space-md text-text-primary">
+                Zero Data Retention (ZDR) contractually enforced on OpenAI/Anthropic enterprise endpoints.
+              </td>
+<td class="p-space-md font-label-mono-sm text-label-mono-sm text-status-emerald">SOC-2 Type II Certified</td>
+</tr>
+<tr class="hover:bg-surface-hover/50 transition-colors">
+<td class="p-space-md font-semibold text-text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-text-secondary text-[18px]">database</span>
+                SOC 2 Type II Security
+              </td>
+<td class="p-space-md text-text-secondary">Continuous infrastructure &amp; change management controls.</td>
+<td class="p-space-md text-text-primary">
+                Continuous compliance automation with daily synthetic penetration tests and automated alerts.
+              </td>
+<td class="p-space-md font-label-mono-sm text-label-mono-sm text-status-emerald">Independent Auditor Signed</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Model Context Protocol (MCP) Secure Integration Section -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-base border-b border-border-subtle relative overflow-hidden">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-2xl items-center">
+<!-- MCP Explanatory Left Column -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-raised border border-border-subtle w-fit font-label-mono-sm text-label-mono-sm text-text-primary">
+<span class="material-symbols-outlined text-primary text-[16px]">sync_alt</span>
+          MODEL CONTEXT PROTOCOL (MCP) INTERFACE
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+          Query Recruit from Claude or ChatGPT without leaking agency boundaries.
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary">
+          High-performance executive search partners leverage external conversational models like Claude Desktop or OpenAI. Recruit exposes a native, cryptographically bound MCP server. 
+        </p>
+<p class="font-body-md text-body-md text-text-secondary">
+          When an executive recruiter queries their database from Claude, the request carries their agency-scoped enterprise token. The same database Row-Level Security policies are applied. You can ask <span class="text-text-primary italic">"Which candidates in my Riyadh pool match this confidential board mandate?"</span> and never risk exposing another firm's candidate pipeline.
+        </p>
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs font-label-mono-sm text-label-mono-sm">
+<div class="p-space-xs bg-surface-raised rounded border border-border-subtle">
+<span class="text-text-tertiary block">TOKEN SCOPE</span>
+<span class="text-text-primary">Agency-Tenant Isolated</span>
+</div>
+<div class="p-space-xs bg-surface-raised rounded border border-border-subtle">
+<span class="text-text-tertiary block">MCP TRANSPORT</span>
+<span class="text-status-emerald">Stdio / SSE with TLS 1.3</span>
+</div>
+</div>
+</div>
+<!-- MCP Visual Code Terminal -->
+<div class="lg:col-span-6">
+<div class="bg-surface-raised rounded-xl border border-border-subtle shadow-2xl overflow-hidden">
+<div class="px-space-md py-space-xs bg-surface-dim border-b border-border-subtle flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-amber-highlight/70"></span>
+<span class="w-3 h-3 rounded-full bg-status-emerald/70"></span>
+<span class="ml-2 font-label-mono-sm text-label-mono-sm text-text-tertiary">recruit-mcp-daemon.json</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">v2.4 SECURED</span>
+</div>
+<div class="p-space-md font-label-mono-sm text-label-mono-sm text-on-surface bg-surface-base overflow-x-auto leading-relaxed">
+<div class="text-text-tertiary">// MCP Server configuration for Executive Search Partners</div>
+<div class="text-text-secondary">{</div>
+<div class="pl-4 text-text-secondary"><span class="text-primary">"mcpServers"</span>: {</div>
+<div class="pl-8 text-text-secondary"><span class="text-primary">"recruit-agency-core"</span>: {</div>
+<div class="pl-12 text-text-secondary"><span class="text-status-cyan">"command"</span>: <span class="text-amber-highlight">"npx"</span>,</div>
+<div class="pl-12 text-text-secondary"><span class="text-status-cyan">"args"</span>: [<span class="text-text-primary">"-y"</span>, <span class="text-text-primary">"@recruit-intelligence/mcp-server"</span>],</div>
+<div class="pl-12 text-text-secondary"><span class="text-status-cyan">"env"</span>: {</div>
+<div class="pl-16 text-text-secondary"><span class="text-status-emerald">"RECRUIT_HOST"</span>: <span class="text-text-primary">"https://eu-central-1.recruit.internal"</span>,</div>
+<div class="pl-16 text-text-secondary"><span class="text-status-emerald">"AGENCY_TENANT_KEY"</span>: <span class="text-text-primary">"sec_live_99f018d4..."</span>,</div>
+<div class="pl-16 text-text-secondary"><span class="text-status-emerald">"PII_REDACTION_MODE"</span>: <span class="text-amber-highlight">"STRICT_HARDENED"</span>,</div>
+<div class="pl-16 text-text-secondary"><span class="text-status-emerald">"ROW_LEVEL_SECURITY"</span>: <span class="text-status-emerald">"ENFORCED_KERNEL"</span></div>
+<div class="pl-12 text-text-secondary">}</div>
+<div class="pl-8 text-text-secondary">}</div>
+<div class="pl-4 text-text-secondary">}</div>
+<div class="text-text-secondary">}</div>
+<div class="mt-4 pt-4 border-t border-border-subtle flex items-center justify-between text-text-tertiary">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-status-emerald"></span> MCP Handshake Authenticated</span>
+<span>Latency: 28ms</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Officer FAQ Accordions -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-dim border-b border-border-subtle">
+<div class="max-w-4xl mx-auto flex flex-col gap-space-2xl">
+<div class="text-center flex flex-col items-center gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest">TRANSPARENCY FIRST</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+          Frequently Answered Security Questions
+        </h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-xl">
+          Everything your Chief Information Security Officer (CISO) and Data Protection Officer (DPO) need to sign off.
+        </p>
+</div>
+<!-- Minimalist Hairline FAQ Accordion Set -->
+<div class="flex flex-col divide-y divide-border-subtle border-t border-b border-border-subtle" id="trust-faq">
+<!-- FAQ Item 1 -->
+<div class="py-space-md group cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-space-md">
+<h4 class="font-body-lg text-body-lg text-text-primary group-hover:text-primary transition-colors font-medium">
+              Does candidate contact information ever reach OpenAI, Anthropic, or external LLMs?
+            </h4>
+<span class="faq-icon text-amber-highlight text-stat-metric transition-transform duration-200">+</span>
+</div>
+<div class="faq-content hidden pt-space-xs text-text-secondary font-body-md text-body-md">
+            No. Direct contact details—including personal email addresses, private telephone numbers, physical street addresses, and social profile handles—are stripped out in volatile memory prior to any API inference payload creation. Only anonymized skills, qualifications, seniority markers, and past company names are evaluated. Contact details are re-linked locally within your sovereign PostgreSQL instance.
+          </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="py-space-md group cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-space-md">
+<h4 class="font-body-lg text-body-lg text-text-primary group-hover:text-primary transition-colors font-medium">
+              How does Recruit mathematically ensure Agency A cannot read Agency B's pool?
+            </h4>
+<span class="faq-icon text-amber-highlight text-stat-metric transition-transform duration-200">+</span>
+</div>
+<div class="faq-content hidden pt-space-xs text-text-secondary font-body-md text-body-md">
+            Recruit relies on PostgreSQL Row-Level Security (RLS) policies embedded directly in the relational schema. Every API request assumes an authenticated database role tied to a specific agency tenant identity. Even if an application-layer bug were to omit a where-clause filter, the database engine returns zero rows for records that belong to another agency ID.
+          </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="py-space-md group cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-space-md">
+<h4 class="font-body-lg text-body-lg text-text-primary group-hover:text-primary transition-colors font-medium">
+              Can our search firm bring our own OpenAI or Anthropic API credentials?
+            </h4>
+<span class="faq-icon text-amber-highlight text-stat-metric transition-transform duration-200">+</span>
+</div>
+<div class="faq-content hidden pt-space-xs text-text-secondary font-body-md text-body-md">
+            Yes. On our White Label and Enterprise tiers, agencies can inject their own Zero-Retention Enterprise API keys. When configured, Recruit routes all inference calls through your direct provider contracts, ensuring your enterprise legal terms govern all model evaluations.
+          </div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="py-space-md group cursor-pointer" onclick="toggleFaq(this)">
+<div class="flex items-center justify-between gap-space-md">
+<h4 class="font-body-lg text-body-lg text-text-primary group-hover:text-primary transition-colors font-medium">
+              What occurs during a GDPR Right-to-Erasure execution?
+            </h4>
+<span class="faq-icon text-amber-highlight text-stat-metric transition-transform duration-200">+</span>
+</div>
+<div class="faq-content hidden pt-space-xs text-text-secondary font-body-md text-body-md">
+            Deletion is permanent and atomic. When an admin executes an erasure request, Recruit drops the candidate relational row, wipes the raw PDF/Word document from Frankfurt S3 buckets, purges the 1536-dimension vector embedding from pgvector, and cleans cached reasoning logs. A cryptographic audit signature is logged without storing the erased PII.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Security Officer Whitepaper & Demo Booking CTA -->
+<section class="w-full py-space-3xl px-6 lg:px-12 bg-surface-base relative" id="demo">
+<div class="max-w-7xl mx-auto rounded-2xl bg-surface-raised border border-border-luminous p-space-xl lg:p-space-2xl relative overflow-hidden shadow-[0_0_50px_rgba(245,166,35,0.08)]">
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl relative z-10 items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-2 px-space-xs py-1 rounded bg-surface-overlay border border-border-subtle font-label-mono-sm text-label-mono-sm text-amber-highlight w-fit">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+            WHITE PAPER: SOVEREIGN ARCHITECTURE 2025
+          </div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary font-headline-lg">
+            Download our Technical Security Whitepaper.
+          </h2>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl">
+            A comprehensive 28-page briefing detailing our Frankfurt bare-metal isolation, cryptographic redaction benchmarks, GDPR audit pathways, and MCP integration topology.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="inline-flex items-center gap-2 px-space-md py-space-xs rounded bg-surface-overlay border border-border-subtle text-text-primary hover:border-outline transition-colors font-body-md text-body-md font-semibold" onclick="alert('Whitepaper download initiated. PDF version 2.4 sent to your terminal.')">
+<span class="material-symbols-outlined text-amber-highlight text-[18px]">download</span>
+              Download Whitepaper (PDF)
+            </button>
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary">SHA-256 Verified · 4.2 MB</span>
+</div>
+</div>
+<div class="lg:col-span-5 bg-surface-dim p-space-lg rounded-xl border border-border-subtle flex flex-col gap-space-md">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Schedule a DPO / CISO Walkthrough</h4>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1">
+              Have our Chief Trust Architect run a live penetration and RLS audit demo against a simulated executive search pool.
+            </p>
+</div>
+<form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault(); document.getElementById('demo-feedback').classList.remove('hidden');">
+<div>
+<label class="block font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase mb-1">Corporate Email</label>
+<input class="w-full px-space-sm py-2 rounded bg-surface-raised border border-border-subtle text-text-primary font-body-md text-body-md focus:outline-none focus:border-amber-highlight transition-colors placeholder:text-text-tertiary" placeholder="dpo@searchfirm.com" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase mb-1">Jurisdiction Interest</label>
+<select class="w-full px-space-sm py-2 rounded bg-surface-raised border border-border-subtle text-text-primary font-body-md text-body-md focus:outline-none focus:border-amber-highlight transition-colors">
+<option>European Union (GDPR Frankfurt)</option>
+<option>Saudi Arabia (SOCPA / PDPL)</option>
+<option>United Kingdom (UK GDPR)</option>
+<option>Global Search Firm (Cross-Border RLS)</option>
+</select>
+</div>
+<button class="mt-space-xs w-full py-space-xs rounded bg-primary-container text-surface-base font-body-md text-body-md font-semibold hover:bg-amber-highlight transition-all shadow-[0_0_20px_rgba(245,166,35,0.25)]" type="submit">
+              Book Security Deep-Dive
+            </button>
+</form>
+<div class="hidden p-space-xs rounded bg-status-emerald/10 border border-status-emerald/30 text-status-emerald font-label-mono-sm text-label-mono-sm" id="demo-feedback">
+            Request received. Our security compliance team replies within 4 business hours with our SOC-2 Type II portal link.
+          </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function toggleFaq(container) {
+    const content = container.querySelector('.faq-content');
+    const icon = container.querySelector('.faq-icon');
+    const isHidden = content.classList.contains('hidden');
+    
+    // Close other FAQs
+    document.querySelectorAll('#trust-faq .faq-content').forEach(el => el.classList.add('hidden'));
+    document.querySelectorAll('#trust-faq .faq-icon').forEach(el => {
+      el.textContent = '+';
+      el.classList.remove('rotate-45');
+    });
+
+    if (isHidden) {
+      content.classList.remove('hidden');
+      icon.textContent = '×';
+      icon.classList.add('rotate-45');
+    }
+  }
+</script></main><footer class="w-full bg-surface-raised border-t border-border-subtle"><div class="max-w-7xl mx-auto px-6 lg:px-12 pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl border-b border-border-subtle"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-surface-overlay border border-border-luminous flex items-center justify-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><span class="material-symbols-outlined text-primary text-[16px]">hub</span></div><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-semibold">Recruit</span></div><p class="font-body-md text-body-md text-text-secondary max-w-sm">The AI-first ATS and CRM engineered specifically for executive search firms, boutique headhunters, and elite recruitment consultancies.</p><div class="flex items-center gap-space-xs text-text-tertiary font-label-mono-sm text-label-mono-sm"><span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-status-emerald text-[14px]">verified_user</span>EU Sovereignty Tier</span><span>•</span><span>SOC-2 Certified</span></div></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Solutions</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="platform" href="#">Platform Overview</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="all-in-one" href="#">All-in-One ATS + CRM</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="white-label" href="#">White Label Portals</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="pricing-and-plans" href="#">Pricing &amp; Plans</a></li></ul></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Security &amp; Trust</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">EU Sovereignty Tier</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">GDPR &amp; Compliance</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">SOC-2 Certification</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">Sovereign Data Storage</a></li></ul></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Company</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="book-a-demo" href="#">Book a Demo</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="sign-in" href="#">Sign In</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">Trust Center</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="pricing-and-plans" href="#">ROI Calculator</a></li></ul></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-text-tertiary"><div>© 2025 Recruit Intelligence Ltd. All rights reserved. Sovereign AI Infrastructure.</div><div class="flex items-center gap-space-md font-label-mono-sm text-label-mono-sm"><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">PRIVACY POLICY</a><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">TERMS OF SERVICE</a><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">SYSTEM STATUS</a></div></div></div></footer></body></html>

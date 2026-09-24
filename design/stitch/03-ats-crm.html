@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&amp;family=Sora:wght@300;400;500;600;700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"text-tertiary":"#625E54","error-container":"#93000a","on-tertiary-container":"#004f5d","surface-bright":"#39393b","surface-dim":"#131315","on-tertiary-fixed-variant":"#004e5c","primary-fixed":"#ffddb4","on-surface":"#e5e1e4","on-secondary":"#003824","surface-tint":"#ffb955","primary-container":"#f5a623","tertiary-container":"#32c6e5","background":"#131315","on-error":"#690005","outline-variant":"#524534","border-subtle":"#272732","on-background":"#e5e1e4","secondary-container":"#00a572","surface-container":"#201f21","on-primary":"#452b00","secondary-fixed-dim":"#4edea3","inverse-surface":"#e5e1e4","text-primary":"#F7F5F0","on-secondary-fixed-variant":"#005236","tertiary":"#66e1ff","on-tertiary":"#003640","tertiary-fixed":"#acedff","inverse-on-surface":"#313032","surface-hover":"#242430","secondary":"#4edea3","on-secondary-fixed":"#002113","tertiary-fixed-dim":"#4cd7f6","surface-container-high":"#2a2a2c","surface-overlay":"#1A1A22","on-error-container":"#ffdad6","border-luminous":"rgba(245, 166, 35, 0.35)","gold-muted":"#D4AF5A","surface-raised":"#121216","surface-container-highest":"#353437","on-secondary-container":"#00311f","text-secondary":"#96907F","surface-container-lowest":"#0e0e10","secondary-fixed":"#6ffbbe","primary":"#ffc880","status-cyan":"#06B6D4","primary-fixed-dim":"#ffb955","surface-container-low":"#1c1b1d","on-primary-container":"#644000","amber-highlight":"#FFB946","outline":"#9f8e7a","status-emerald":"#10B981","on-surface-variant":"#d7c3ae","on-primary-fixed":"#291800","on-tertiary-fixed":"#001f26","surface-variant":"#353437","error":"#ffb4ab","surface":"#131315","inverse-primary":"#835500","on-primary-fixed-variant":"#633f00","surface-base":"#0A0A0C"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"gutter-lg":"2.5rem","space-3xl":"4.5rem","space-xs":"0.5rem","space-2xl":"3rem","gutter-sm":"1rem","space-2xs":"0.25rem","space-xl":"2rem","space-sm":"0.75rem",gutter:"1.5rem","space-lg":"1.5rem","margin-mobile":"1.25rem",margin:"2rem","space-md":"1rem"},fontFamily:{"display-hero":["Newsreader"],"label-mono-sm":["Space Mono"],"body-lg":["Sora"],"display-hero-mobile":["Newsreader"],"headline-md":["Newsreader"],"headline-lg":["Newsreader"],"stat-metric":["Space Mono"],"label-mono-lg":["Space Mono"],"body-sm":["Sora"],"body-md":["Sora"],"headline-sm":["Sora"]},fontSize:{"display-hero":["64px",{lineHeight:"72px",letterSpacing:"-0.02em",fontWeight:"400"}],"label-mono-sm":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"400"}],"body-lg":["16px",{lineHeight:"26px",fontWeight:"400"}],"display-hero-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",fontWeight:"400"}],"headline-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.015em",fontWeight:"400"}],"stat-metric":["32px",{lineHeight:"36px",fontWeight:"700"}],"label-mono-lg":["13px",{lineHeight:"18px",letterSpacing:"0.06em",fontWeight:"700"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"body-md":["14px",{lineHeight:"22px",fontWeight:"400"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}]}}}};</script></head><body class="bg-surface-base font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-base/85 backdrop-blur-xl border-b border-border-subtle"><div class="h-16 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-xs group" data-path="platform" href="#"><div class="w-8 h-8 rounded-lg bg-surface-overlay border border-border-luminous flex items-center justify-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><span class="material-symbols-outlined text-primary text-[18px]">hub</span></div><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-semibold">Recruit</span></a><div class="hidden xl:flex items-center gap-space-2xs px-space-xs py-space-2xs rounded-full bg-surface-raised border border-border-subtle"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-status-emerald opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-status-emerald"></span></span><span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-wider">All systems operational</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-surface-overlay text-text-primary rounded-lg border border-border-subtle shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="platform" href="#">Platform</a><a aria-current="page" class="px-space-sm py-space-xs transition-colors font-body-md bg-surface-overlay text-text-primary rounded-lg border border-border-subtle shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]" data-path="all-in-one" href="#">All-in-One</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="white-label" href="#">White Label</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="security-and-trust" href="#">Security &amp; Trust</a><a class="px-space-sm py-space-xs text-text-secondary hover:text-text-primary transition-colors font-body-md text-body-md" data-path="pricing-and-plans" href="#">Pricing &amp; Plans</a></nav><div class="flex items-center gap-space-sm"><div class="hidden sm:flex items-center gap-space-2xs px-space-xs py-space-2xs rounded bg-surface-raised border border-border-subtle font-label-mono-sm text-label-mono-sm text-text-tertiary cursor-pointer hover:border-outline transition-colors"><span class="material-symbols-outlined text-[14px]">search</span><span>Search</span><kbd class="px-1 py-0.5 rounded bg-surface-container font-label-mono-sm text-label-mono-sm text-text-secondary">⌘K</kbd></div><a class="hidden md:inline-block font-body-md text-body-md text-text-secondary hover:text-text-primary transition-colors px-space-xs py-space-2xs" data-path="sign-in" href="#">Sign in</a><a class="inline-flex items-center px-space-sm py-space-xs rounded bg-primary-container text-surface-base font-body-md text-body-md font-semibold hover:bg-amber-highlight transition-all shadow-[0_0_20px_rgba(245,166,35,0.25)] hover:shadow-[0_0_24px_rgba(245,166,35,0.4)]" data-path="book-a-demo" href="#">Book a demo</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface-base"><div class="flex flex-col w-full">
+<!-- Top Subtle Ambient Light Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[340px] bg-gradient-to-b from-primary-container/15 via-gold-muted/5 to-transparent blur-[120px] pointer-events-none"></div>
+<!-- Section 1: Hero & Architectural Premise -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-24 relative z-10">
+<div class="flex flex-col items-start gap-space-md max-w-4xl">
+<!-- Monospaced Section Tag -->
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-raised shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary uppercase tracking-widest">03 / ALL IN ONE ATS + CRM</span>
+<span class="text-text-tertiary">/</span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">ZERO TAB-SWITCHING</span>
+</div>
+<!-- Serif Main Display Title -->
+<h1 class="font-headline-lg lg:font-display-hero text-headline-lg lg:text-display-hero text-text-primary tracking-tight">
+          Your clients, roles, candidates and placements. <span class="italic font-normal text-primary">One continuous system.</span>
+</h1>
+<!-- Sora Subtitle -->
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl leading-relaxed">
+          No CRM on one tab and ATS on another. A role belongs to a client, a candidate belongs to the pool, and every email, task, briefing pack and interview hangs off the record it is about.
+        </p>
+<!-- Rapid Metric Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-6 w-full pt-6">
+<div class="p-4 rounded-xl bg-surface-raised shadow-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase block mb-1">Architecture</span>
+<div class="font-stat-metric text-stat-metric text-text-primary">1 <span class="text-primary text-xl">Pool</span></div>
+<span class="font-body-sm text-body-sm text-text-secondary">Unified candidate graph</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-raised shadow-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase block mb-1">Context Switching</span>
+<div class="font-stat-metric text-stat-metric text-primary">0 <span class="text-text-secondary text-xl">Tabs</span></div>
+<span class="font-body-sm text-body-sm text-text-secondary">Integrated relational records</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-raised shadow-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase block mb-1">CV Redaction</span>
+<div class="font-stat-metric text-stat-metric text-status-emerald">100%</div>
+<span class="font-body-sm text-body-sm text-text-secondary">Zero PII exposed to LLM</span>
+</div>
+<div class="p-4 rounded-xl bg-surface-raised shadow-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-text-tertiary uppercase block mb-1">Dispatch Speed</span>
+<div class="font-stat-metric text-stat-metric text-text-primary">1 <span class="text-primary text-xl">Click</span></div>
+<span class="font-body-sm text-body-sm text-text-secondary">Client portal presentation</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Section 2: The 6-Pillar Relational Architecture -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest block mb-2">// RELATIONAL FOUNDATION</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Six Pillars. Single Pane of Glass.</h2>
+</div>
+<p class="font-body-md text-body-md text-text-secondary max-w-md">
+        Every agency touchpoint—from raw CV parsing to high-stakes executive interview prep—shares a singular, reactive schema.
+      </p>
+</div>
+<!-- 6 Pillar Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Pillar 1: Candidates -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">badge</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">01 / POOL</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Candidates</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            One database, never two. Multi-criteria filtering, saved custom views, shareable filtered links, bulk CV parsing or CSV sync, and automatic duplicate detection before duplicates materialize.
+          </p>
+</div>
+<!-- Mini Profile Card Preview -->
+<div class="p-4 rounded-lg bg-surface-dim shadow-inner">
+<div class="flex items-start justify-between mb-3">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded bg-primary-container text-surface-base font-bold flex items-center justify-center font-headline-sm text-body-sm">
+                SA
+              </div>
+<div>
+<div class="font-headline-sm text-body-md text-text-primary flex items-center gap-2">
+                  Sara Al-Harbi
+                  <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-label-mono-sm bg-status-emerald/15 text-status-emerald">SOCPA</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Senior Accountant · Riyadh</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full text-[10px] font-label-mono-sm bg-surface-overlay text-status-emerald flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-emerald"></span> Available
+            </span>
+</div>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded text-[11px] font-label-mono-sm bg-surface-overlay text-text-secondary">IFRS 16</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-label-mono-sm bg-surface-overlay text-text-secondary">Month-end Close</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-label-mono-sm bg-surface-overlay text-text-secondary">30d Notice</span>
+<span class="px-2 py-0.5 rounded text-[11px] font-label-mono-sm bg-primary/10 text-primary">Match 91%</span>
+</div>
+</div>
+</div>
+<!-- Pillar 2: Roles & Pipeline Board -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">view_kanban</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">02 / PIPELINE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Roles &amp; Pipeline Board</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            Agency-named stages (Sourced, Screening, Client Review, Interviewing, Offer, Placement). Dedicated Kanban per role, collaborator tags, and mandatory close reasons (won, lost, no-hire) for airtight reporting.
+          </p>
+</div>
+<!-- Mini Board Preview -->
+<div class="p-3 rounded-lg bg-surface-dim space-y-2">
+<div class="flex items-center justify-between font-label-mono-sm text-label-mono-sm text-text-secondary">
+<span>HEAD OF FINANCE // AL RAJHI</span>
+<span class="text-primary font-bold">SAR 45k/mo</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 pt-1">
+<div class="p-2 rounded bg-surface-overlay text-[11px] font-label-mono-sm">
+<div class="text-text-tertiary mb-1">REVIEW (4)</div>
+<div class="text-text-primary font-medium truncate">Omar Mansour</div>
+<div class="text-gold-muted text-[10px]">Score 88</div>
+</div>
+<div class="p-2 rounded bg-surface-overlay text-[11px] font-label-mono-sm">
+<div class="text-text-tertiary mb-1">INTERVIEW (2)</div>
+<div class="text-text-primary font-medium truncate">Sara Al-Harbi</div>
+<div class="text-status-emerald text-[10px]">Round 2 Thu</div>
+</div>
+<div class="p-2 rounded bg-surface-overlay text-[11px] font-label-mono-sm bg-status-emerald/10">
+<div class="text-status-emerald mb-1">OFFER (1)</div>
+<div class="text-text-primary font-medium truncate">Tariq F.</div>
+<div class="text-status-emerald text-[10px]">Sent Today</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pillar 3: Clients & CRM -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">corporate_fare</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">03 / CRM</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Clients &amp; CRM</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            Accounts like Al Rajhi Foods or Red Sea Global, associated key contacts, custom fee structures (contingent/retained 22%), historical timeline notes, and direct mirrors into secure client portals.
+          </p>
+</div>
+<!-- Mini CRM Account View -->
+<div class="p-3.5 rounded-lg bg-surface-dim flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-body-md font-semibold text-text-primary">Red Sea Global</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">RETAINER 25%</span>
+</div>
+<div class="flex items-center justify-between text-body-sm text-text-secondary pt-1">
+<span>Primary: Faisal Al-Saud (CHRO)</span>
+<span class="text-status-emerald font-label-mono-sm text-[11px]">Portal Active</span>
+</div>
+</div>
+</div>
+<!-- Pillar 4: Integrated Mailbox -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">alternate_email</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">04 / MAILBOX</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Integrated Mailbox</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            Threaded bidirectional mail attached directly to candidate and role cards. Context-aware AI drafts synthesized from candidate CVs and client briefs—with 1-click recruiter approval before transmission.
+          </p>
+</div>
+<!-- Mini Mail Draft Preview -->
+<div class="p-3 rounded-lg bg-surface-dim text-body-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-mono-sm text-[11px] text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">auto_awesome</span> AI Synthesized Draft
+            </span>
+<span class="text-[10px] font-label-mono-sm text-text-tertiary">Pending Recruiter OK</span>
+</div>
+<p class="font-body-sm text-text-secondary line-clamp-2 italic text-xs mb-2">
+            "Dear Faisal, based on your brief for SOCPA certification and FMCG audit experience, Sara Al-Harbi's profile is prepared for review..."
+          </p>
+<div class="flex justify-end gap-2">
+<button class="px-2 py-1 rounded bg-surface-overlay font-label-mono-sm text-[11px] text-text-secondary">Edit</button>
+<button class="px-2 py-1 rounded bg-primary-container text-surface-base font-label-mono-sm text-[11px] font-bold">Approve &amp; Send</button>
+</div>
+</div>
+</div>
+<!-- Pillar 5: Submission Packs & Interview Briefings -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">05 / ARTIFACTS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Submission Packs &amp; Briefings</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            1-click branded candidate presentation packs, interview prep briefings with suggested technical &amp; behavioral questions, printable JDs in internal and client-facing variants.
+          </p>
+</div>
+<!-- Mini Pack Item -->
+<div class="p-3 rounded-lg bg-surface-dim flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-gold-muted text-[20px]">picture_as_pdf</span>
+<div>
+<div class="font-body-md text-body-sm font-medium text-text-primary">Executive_Dossier_SaraH.pdf</div>
+<div class="font-label-mono-sm text-[10px] text-text-secondary">Branded · Redacted PII · Interview Scorecard</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-text-tertiary text-[18px]">download</span>
+</div>
+</div>
+<!-- Pillar 6: Plain-English Natural Language Reports -->
+<div class="rounded-xl bg-surface-raised p-6 flex flex-col justify-between shadow-md hover:bg-surface-hover transition-colors group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-10 h-10 rounded-lg bg-surface-overlay flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">query_stats</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2 py-0.5 rounded bg-surface-dim text-text-tertiary">06 / ANALYTICS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2">Plain-English Reports</h3>
+<p class="font-body-md text-body-md text-text-secondary mb-6">
+            Ask questions like "Cost per hire this quarter by client" or "Recruiter placement velocity in Q1" and get instant tables and charts, exportable to Excel or CSV.
+          </p>
+</div>
+<!-- Mini Terminal Snapshot -->
+<div class="p-3 rounded-lg bg-surface-dim font-label-mono-sm text-xs">
+<div class="text-text-tertiary flex items-center gap-1 mb-1">
+<span class="text-primary">&gt;</span> query "placement velocity by consultant Q1"
+          </div>
+<div class="flex items-center justify-between text-text-primary pt-1">
+<span>K. Al-Mansoor: 14.2 days avg</span>
+<span class="text-status-emerald">+18% faster</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Interactive Pipeline & Record Teardown (Kanban In-Action) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-20 w-full">
+<div class="flex flex-col lg:flex-row items-start justify-between gap-8 mb-10">
+<div>
+<div class="inline-flex items-center gap-2 text-primary font-label-mono-sm text-label-mono-sm uppercase tracking-wider mb-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+          REAL-TIME SYNCHRONIZATION
+        </div>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">
+          From AI Shortlist to Signed Offer. No Hand-offs.
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-text-secondary max-w-lg">
+        Watch candidate records traverse agency-specific stages. When a client comments in their isolated portal, the candidate card updates right inside your ATS view instantly.
+      </p>
+</div>
+<!-- Realistic Board Container -->
+<div class="w-full rounded-2xl bg-surface-raised p-6 shadow-xl overflow-x-auto">
+<div class="flex items-center justify-between mb-6 pb-4">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-status-emerald"></span>
+<span class="font-headline-sm text-body-lg text-text-primary font-semibold">Active Role: Senior Legal Counsel</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm px-2.5 py-0.5 rounded bg-surface-overlay text-gold-muted">Client: NEOM Energy</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-mono-sm text-label-mono-sm text-text-secondary">Fee: SAR 120,000</span>
+<button class="px-3 py-1 rounded bg-surface-overlay text-text-primary hover:bg-surface-hover font-label-mono-sm text-label-mono-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">share</span> Share Portal View
+          </button>
+</div>
+</div>
+<!-- 4-Stage Kanban Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 min-w-[900px]">
+<!-- Column 1: AI Shortlist -->
+<div class="flex flex-col gap-3 p-3.5 rounded-xl bg-surface-dim">
+<div class="flex items-center justify-between font-label-mono-sm text-label-mono-sm text-text-secondary pb-1">
+<span class="flex items-center gap-1.5 font-bold text-text-primary">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> AI SHORTLIST
+            </span>
+<span class="px-1.5 py-0.2 rounded bg-surface-raised">3</span>
+</div>
+<!-- Card 1 -->
+<div class="p-3.5 rounded-lg bg-surface-raised shadow hover:translate-y-[-2px] transition-transform cursor-pointer">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h4 class="font-body-md font-semibold text-text-primary">Fahad Al-Ghamdi</h4>
+<p class="font-body-sm text-text-secondary text-xs">LL.M. · 9 yrs Corporate</p>
+</div>
+<span class="font-label-mono-sm text-xs font-bold text-primary px-1.5 py-0.5 rounded bg-primary-container/10">94%</span>
+</div>
+<div class="flex items-center gap-1.5 text-[11px] font-label-mono-sm text-text-tertiary">
+<span class="material-symbols-outlined text-[13px] text-status-emerald">check_circle</span> Saudi Bar Certified
+            </div>
+</div>
+<!-- Card 2 -->
+<div class="p-3.5 rounded-lg bg-surface-raised shadow hover:translate-y-[-2px] transition-transform cursor-pointer opacity-75">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h4 class="font-body-md font-semibold text-text-primary">Noura Al-Otaibi</h4>
+<p class="font-body-sm text-text-secondary text-xs">Bilingual Contract Lead</p>
+</div>
+<span class="font-label-mono-sm text-xs font-bold text-text-secondary px-1.5 py-0.5 rounded bg-surface-overlay">87%</span>
+</div>
+<div class="flex items-center gap-1.5 text-[11px] font-label-mono-sm text-text-tertiary">
+<span class="material-symbols-outlined text-[13px]">schedule</span> 60-day notice
+            </div>
+</div>
+</div>
+<!-- Column 2: Client Portal Sent -->
+<div class="flex flex-col gap-3 p-3.5 rounded-xl bg-surface-dim">
+<div class="flex items-center justify-between font-label-mono-sm text-label-mono-sm text-text-secondary pb-1">
+<span class="flex items-center gap-1.5 font-bold text-text-primary">
+<span class="w-2 h-2 rounded-full bg-status-cyan"></span> CLIENT REVIEW
+            </span>
+<span class="px-1.5 py-0.2 rounded bg-surface-raised">2</span>
+</div>
+<!-- Card Active in Portal -->
+<div class="p-3.5 rounded-lg bg-surface-raised shadow-md relative overflow-hidden">
+<div class="absolute top-0 right-0 left-0 h-[2px] bg-status-cyan"></div>
+<div class="flex items-start justify-between mb-2">
+<div>
+<h4 class="font-body-md font-semibold text-text-primary">Zaid Al-Hassan</h4>
+<p class="font-body-sm text-text-secondary text-xs">Infrastructure &amp; M&amp;A</p>
+</div>
+<span class="font-label-mono-sm text-xs font-bold text-status-cyan px-1.5 py-0.5 rounded bg-status-cyan/10">Sent</span>
+</div>
+<div class="p-2 rounded bg-surface-overlay text-[11px] font-body-sm text-gold-muted mt-2">
+              "Client viewed presentation pack 20m ago"
+            </div>
+</div>
+</div>
+<!-- Column 3: Interview Scheduled -->
+<div class="flex flex-col gap-3 p-3.5 rounded-xl bg-surface-dim">
+<div class="flex items-center justify-between font-label-mono-sm text-label-mono-sm text-text-secondary pb-1">
+<span class="flex items-center gap-1.5 font-bold text-text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span> INTERVIEW
+            </span>
+<span class="px-1.5 py-0.2 rounded bg-surface-raised">1</span>
+</div>
+<!-- Card in interview -->
+<div class="p-3.5 rounded-lg bg-surface-overlay shadow-lg">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h4 class="font-body-md font-semibold text-text-primary">Kareem El-Baz</h4>
+<p class="font-body-sm text-text-secondary text-xs">Ex-Baker McKenzie</p>
+</div>
+<span class="font-label-mono-sm text-xs font-bold text-status-emerald px-1.5 py-0.5 rounded bg-status-emerald/15">Round 3</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-mono-sm text-text-secondary pt-2">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">event</span> Tomorrow 14:00
+              </span>
+<span class="text-text-primary underline cursor-pointer">Briefing PDF</span>
+</div>
+</div>
+</div>
+<!-- Column 4: Placement Made -->
+<div class="flex flex-col gap-3 p-3.5 rounded-xl bg-surface-dim">
+<div class="flex items-center justify-between font-label-mono-sm text-label-mono-sm text-text-secondary pb-1">
+<span class="flex items-center gap-1.5 font-bold text-text-primary">
+<span class="w-2 h-2 rounded-full bg-status-emerald"></span> PLACEMENT
+            </span>
+<span class="px-1.5 py-0.2 rounded bg-surface-raised">1</span>
+</div>
+<!-- Won Card -->
+<div class="p-3.5 rounded-lg bg-status-emerald/10 shadow">
+<div class="flex items-start justify-between mb-2">
+<div>
+<h4 class="font-body-md font-semibold text-text-primary">Layla Qasim</h4>
+<p class="font-body-sm text-text-secondary text-xs">General Counsel</p>
+</div>
+<span class="material-symbols-outlined text-status-emerald text-[20px]">verified</span>
+</div>
+<div class="font-label-mono-sm text-[11px] text-status-emerald font-bold pt-1">
+              FEE INVOICED: SAR 135,000
+            </div>
+<div class="text-[10px] font-label-mono-sm text-text-tertiary mt-1">
+              Close Reason: Won · Start Date May 1
+            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Natural Language Analytics Terminal -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="rounded-3xl bg-surface-raised p-8 lg:p-12 relative overflow-hidden shadow-2xl">
+<!-- Glow effect -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 bg-primary/10 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Text Left -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest">// NO BI DASHBOARDS TO MAINTAIN</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">
+            Ask in Plain English. Get Instant Revenue &amp; Velocity Data.
+          </h2>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+            Forget exporting CSVs to run pivot tables. The built-in assistant reads the entire database graph and outputs audited placement analytics, recruiter performance, and client yield curves.
+          </p>
+<div class="flex items-center gap-3 pt-4">
+<div class="flex items-center gap-1.5 text-text-tertiary font-label-mono-sm text-label-mono-sm">
+<span class="material-symbols-outlined text-status-emerald text-[16px]">terminal</span> Direct SQL Synthesis
+            </div>
+<span class="text-text-tertiary">•</span>
+<div class="flex items-center gap-1.5 text-text-tertiary font-label-mono-sm text-label-mono-sm">
+<span class="material-symbols-outlined text-primary text-[16px]">file_download</span> 1-Click Excel / CSV
+            </div>
+</div>
+</div>
+<!-- Terminal Window Right -->
+<div class="lg:col-span-7 rounded-xl bg-surface-dim shadow-2xl overflow-hidden font-label-mono-sm">
+<!-- Window Header -->
+<div class="px-4 py-3 bg-surface-overlay flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-primary/70"></span>
+<span class="w-3 h-3 rounded-full bg-status-emerald/70"></span>
+<span class="ml-2 text-text-secondary text-xs font-mono">analytics@recruit-intelligence:~$</span>
+</div>
+<span class="text-[10px] text-text-tertiary uppercase">READ_REPLICA_SYNCED</span>
+</div>
+<!-- Window Body -->
+<div class="p-6 space-y-4">
+<!-- Query Prompt -->
+<div class="flex items-start gap-2 text-text-primary">
+<span class="text-primary font-bold">&gt;</span>
+<span class="font-body-md text-text-primary">
+                "Show placement revenue, cost per hire, and days to fill for Q1 grouped by client account"
+              </span>
+</div>
+<!-- Execution Status -->
+<div class="text-xs text-status-emerald flex items-center gap-2">
+<span class="material-symbols-outlined text-[15px] animate-spin">refresh</span>
+<span>Synthesizing cross-relational rollup across 48 placements... done (0.24s)</span>
+</div>
+<!-- Table Result -->
+<div class="overflow-x-auto pt-2">
+<table class="w-full text-left text-xs">
+<thead>
+<tr class="text-text-tertiary">
+<th class="pb-2 font-normal">CLIENT ACCOUNT</th>
+<th class="pb-2 font-normal">PLACEMENTS</th>
+<th class="pb-2 font-normal">AVG DAYS</th>
+<th class="pb-2 font-normal">FEE REVENUE</th>
+<th class="pb-2 font-normal text-right">STATUS</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-subtle/30 text-text-secondary">
+<tr>
+<td class="py-2.5 font-medium text-text-primary">Al Rajhi Foods</td>
+<td class="py-2.5">6 roles</td>
+<td class="py-2.5">18 days</td>
+<td class="py-2.5 text-primary">SAR 490,000</td>
+<td class="py-2.5 text-right text-status-emerald font-semibold">Collected</td>
+</tr>
+<tr>
+<td class="py-2.5 font-medium text-text-primary">Red Sea Global</td>
+<td class="py-2.5">4 roles</td>
+<td class="py-2.5">24 days</td>
+<td class="py-2.5 text-primary">SAR 620,000</td>
+<td class="py-2.5 text-right text-status-emerald font-semibold">Collected</td>
+</tr>
+<tr>
+<td class="py-2.5 font-medium text-text-primary">NEOM Energy</td>
+<td class="py-2.5">3 roles</td>
+<td class="py-2.5">14 days</td>
+<td class="py-2.5 text-primary">SAR 380,000</td>
+<td class="py-2.5 text-right text-gold-muted">Net 30</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Bottom summary pill -->
+<div class="mt-4 pt-3 flex items-center justify-between text-xs text-text-tertiary">
+<span>Total Q1 Retained Yield: <strong class="text-text-primary">SAR 1,490,000</strong></span>
+<button class="text-primary hover:underline flex items-center gap-1 font-label-mono-sm">
+<span class="material-symbols-outlined text-[14px]">table_view</span> Export .XLSX
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Architectural Comparison (Old Multi-Tab Mess vs Recruit Single Fabric) -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase tracking-widest block mb-2">// TAB HELL VS CONTINUOUS GRAPH</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Why Modern Headhunters Quit Multi-Tool Stacks</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Legacy ATS + Separate CRM -->
+<div class="p-8 rounded-2xl bg-surface-raised/60 shadow-inner flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-error/10 text-error flex items-center justify-center font-bold font-label-mono-sm text-sm">✕</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">The Disconnected Multi-Tool Stack</h3>
+<p class="font-body-sm text-body-sm text-text-secondary">Bullhorn + HubSpot + Calendly + Mailgun + Manual Sheets</p>
+</div>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-text-secondary">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">cancel</span>
+<span>Candidate applied on LinkedIn; recruiter manually logs them into the ATS, forgetting to link the corporate account.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">cancel</span>
+<span>Client sends fee update via email thread; it sits in one recruiter's Outlook inbox without team visibility.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">cancel</span>
+<span>Recruiter spends 45 minutes manually copying CV details into Word to produce a redacted dossier.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-error text-[20px] shrink-0 mt-0.5">cancel</span>
+<span>End of month panic: manually extracting pipeline stages into spreadsheets to calculate billing forecasts.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 font-label-mono-sm text-xs text-error">
+          RESULT: 12.5 hrs wasted per recruiter / week on context shifting
+        </div>
+</div>
+<!-- Recruit All-in-One Engine -->
+<div class="p-8 rounded-2xl bg-surface-raised shadow-xl relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -top-12 -right-12 w-48 h-48 bg-primary/10 rounded-full blur-[60px] pointer-events-none"></div>
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="w-8 h-8 rounded-full bg-status-emerald/15 text-status-emerald flex items-center justify-center font-bold font-label-mono-sm text-sm">✓</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">Recruit All-in-One Continuous Engine</h3>
+<p class="font-body-sm text-body-sm text-primary">Candidates, Roles, Mail, Briefings &amp; Portals in 1 Graph</p>
+</div>
+</div>
+<ul class="space-y-4 font-body-md text-body-md text-text-secondary">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-status-emerald text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Every email automatically attaches to the candidate profile and client role through native two-way mail integration.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-status-emerald text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>1-click submission dossier generation with complete PII redaction and verified skill citation badges.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-status-emerald text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Clients approve and reject candidates in a branded portal that updates your Kanban stage in sub-second real time.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-status-emerald text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Mandatory close-out reasons preserve institutional data, feeding automatic agency velocity reports.</span>
+</li>
+</ul>
+</div>
+<div class="mt-8 pt-4 font-label-mono-sm text-xs text-status-emerald">
+          RESULT: Zero data fragmentation. Placements delivered 3x faster.
+        </div>
+</div>
+</div>
+</section>
+<!-- Section 6: High-Conversion CTA Banner -->
+<section class="max-w-7xl mx-auto px-6 lg:px-12 pt-12 pb-24 w-full">
+<div class="rounded-3xl bg-gradient-to-b from-surface-raised via-surface-overlay to-surface-dim p-10 lg:p-16 text-center flex flex-col items-center gap-space-md shadow-2xl relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,166,35,0.15),transparent_70%)] pointer-events-none"></div>
+<span class="font-label-mono-sm text-label-mono-sm px-3 py-1 rounded-full bg-surface-dim text-primary tracking-widest uppercase">
+        CONSOLIDATE YOUR STACK
+      </span>
+<h2 class="font-headline-lg lg:font-display-hero text-headline-lg lg:text-display-hero text-text-primary max-w-3xl leading-tight">
+        Stop switching tabs.<br/>
+<span class="text-primary italic">Unify your agency operations.</span>
+</h2>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl">
+        Bring a live search brief to your demo. In 30 minutes, watch our assistant match your candidate database and generate a client submission pack ready for dispatch.
+      </p>
+<div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+<a class="px-8 py-4 rounded-lg bg-primary-container text-surface-base font-body-md font-semibold text-body-lg hover:bg-amber-highlight transition-all shadow-[0_0_30px_rgba(245,166,35,0.3)] hover:shadow-[0_0_40px_rgba(245,166,35,0.5)] flex items-center gap-2" data-path="book-a-demo" href="#">
+<span>Book a tailored agency demo</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="px-6 py-4 rounded-lg bg-surface-overlay text-text-primary hover:bg-surface-hover transition-colors font-body-md text-body-md flex items-center gap-2" data-path="pricing-and-plans" href="#">
+<span>View recruiter pricing</span>
+</a>
+</div>
+<div class="flex flex-wrap items-center justify-center gap-6 mt-6 font-label-mono-sm text-label-mono-sm text-text-tertiary">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-status-emerald text-[16px]">lock</span> Enterprise GDPR &amp; EU Sovereignty
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-status-emerald text-[16px]">bolt</span> Migration from Bullhorn / Excel in 24h
+        </span>
+<span>•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-status-emerald text-[16px]">credit_card_off</span> No Credit Card Required
+        </span>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-raised border-t border-border-subtle"><div class="max-w-7xl mx-auto px-6 lg:px-12 pt-space-3xl pb-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-2xl border-b border-border-subtle"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-xs"><div class="w-7 h-7 rounded-lg bg-surface-overlay border border-border-luminous flex items-center justify-center shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]"><span class="material-symbols-outlined text-primary text-[16px]">hub</span></div><span class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-semibold">Recruit</span></div><p class="font-body-md text-body-md text-text-secondary max-w-sm">The AI-first ATS and CRM engineered specifically for executive search firms, boutique headhunters, and elite recruitment consultancies.</p><div class="flex items-center gap-space-xs text-text-tertiary font-label-mono-sm text-label-mono-sm"><span class="inline-flex items-center gap-1"><span class="material-symbols-outlined text-status-emerald text-[14px]">verified_user</span>EU Sovereignty Tier</span><span>•</span><span>SOC-2 Certified</span></div></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Solutions</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="platform" href="#">Platform Overview</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="all-in-one" href="#">All-in-One ATS + CRM</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="white-label" href="#">White Label Portals</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="pricing-and-plans" href="#">Pricing &amp; Plans</a></li></ul></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Security &amp; Trust</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">EU Sovereignty Tier</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">GDPR &amp; Compliance</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">SOC-2 Certification</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">Sovereign Data Storage</a></li></ul></div><div><h4 class="font-label-mono-lg text-label-mono-lg text-text-primary uppercase mb-space-md tracking-wider">Company</h4><ul class="flex flex-col gap-space-xs"><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="book-a-demo" href="#">Book a Demo</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="sign-in" href="#">Sign In</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="security-and-trust" href="#">Trust Center</a></li><li class="font-body-md text-body-md"><a class="text-text-secondary hover:text-text-primary transition-colors" data-path="pricing-and-plans" href="#">ROI Calculator</a></li></ul></div></div><div class="pt-space-xl flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-text-tertiary"><div>© 2025 Recruit Intelligence Ltd. All rights reserved. Sovereign AI Infrastructure.</div><div class="flex items-center gap-space-md font-label-mono-sm text-label-mono-sm"><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">PRIVACY POLICY</a><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">TERMS OF SERVICE</a><a class="hover:text-text-secondary transition-colors" data-path="security-and-trust" href="#">SYSTEM STATUS</a></div></div></div></footer></body></html>
