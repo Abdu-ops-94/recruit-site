@@ -263,7 +263,7 @@ em.g{font-style:italic;color:var(--gold)}
 
 /* all-in-one grid */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{border:1px solid var(--line);border-radius:var(--r-m);padding:26px 24px;background:rgba(247,245,240,.012);transition:border-color .3s,transform .3s}
+.card{display:block;border:1px solid var(--line);border-radius:var(--r-m);padding:26px 24px;background:rgba(247,245,240,.012);transition:border-color .3s,transform .3s}
 .card:hover{border-color:var(--line3);transform:translateY(-2px)}
 .card .ic{width:38px;height:38px;border-radius:10px;border:1px solid var(--line2);display:grid;place-items:center;color:var(--gold);margin-bottom:18px}
 .card .ic svg{width:17px;height:17px}
@@ -451,10 +451,10 @@ html.has-cursor,html.has-cursor *{cursor:none!important}
       <span>Recruit</span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#platform" data-spy="platform">Platform</a>
-      <a href="#system" data-spy="system">All-in-one</a>
-      <a href="#whitelabel" data-spy="whitelabel">White label</a>
-      <a href="#pricing" data-spy="pricing">Pricing</a>
+      <a href="/platform">Platform</a>
+      <a href="/all-in-one">All-in-one</a>
+      <a href="/white-label">White label</a>
+      <a href="/pricing">Pricing</a>
     </nav>
     <div class="nav-right">
       <button class="kbd-pill" id="palBtn" aria-label="Open command palette"><i data-lucide="command"></i><span class="k-txt">K</span></button>
@@ -466,11 +466,12 @@ html.has-cursor,html.has-cursor *{cursor:none!important}
 </header>
 
 <div class="m-menu" id="mMenu">
-  <a href="#platform">Platform</a>
-  <a href="#system">All-in-one</a>
-  <a href="#whitelabel">White label</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#access">Book a demo</a>
+  <a href="/platform">Platform</a>
+  <a href="/all-in-one">All-in-one</a>
+  <a href="/white-label">White label</a>
+  <a href="/security">Security</a>
+  <a href="/pricing">Pricing</a>
+  <a href="/demo">Book a demo</a>
   <a href="https://recruit-two-pi.vercel.app" target="_blank" rel="noopener">Sign in</a>
 </div>
 
@@ -589,213 +590,8 @@ html.has-cursor,html.has-cursor *{cursor:none!important}
   </div>
 </section>
 
-<!-- ============ PLATFORM / FEATURES ============ -->
-<section id="platform">
-  <div class="wrap">
-    <header class="sec-head">
-      <div class="tag rv"><i></i>02 / Platform</div>
-      <h2 class="rv">Five things working as one.</h2>
-      <p class="lead rv">The assistant, the reader, the matcher, the client portal and the privacy shield. Scroll — each runs live on the left.</p>
-    </header>
-
-    <div class="feat-grid">
-      <div class="stage" id="stage">
-        <div class="stage-frame">
-          <div class="stage-head"><span class="live-dot"></span><span class="t" id="stageTitle">Live / Assistant</span><span class="idx" id="stageIdx">01 / 05</span></div>
-          <div class="stage-body" id="stageBody">
-
-            <div class="panel on" data-p="0">
-              <div class="p-chat">
-                <div class="bub me anim" style="--d:.1s">Who in our database could fill the Head of Finance role at Al Rajhi Foods?</div>
-                <div class="bub ai anim" style="--d:1.2s">Ranked 1,284 people. <b>Six</b> clear the bar. Top three have listed-company experience and SOCPA. Two are on 30-day notice. Want the submission pack drafted?</div>
-                <div class="bub me anim" style="--d:2.6s">Yes, and book a call with the first two.</div>
-                <div class="bub ai anim" style="--d:3.6s">Pack drafted for your approval. Two call tasks added for tomorrow 10:00 and 11:30.</div>
-              </div>
-            </div>
-
-            <div class="panel" data-p="1">
-              <div class="p-doc">
-                <div class="p-lines"><div class="p-line" style="width:88%"></div><div class="p-line" style="width:64%"></div><div class="p-line" style="width:79%"></div><div class="p-line" style="width:52%"></div></div>
-                <span class="beam anim"></span>
-                <div class="p-chips">
-                  <span class="chip gold p-chip anim" style="--d:.5s">Senior Accountant · 5y</span>
-                  <span class="chip gold p-chip anim" style="--d:1.1s">SOCPA · 2021</span>
-                  <span class="chip gold p-chip anim" style="--d:1.7s">Riyadh · relocates: no</span>
-                  <span class="chip gold p-chip anim" style="--d:2.3s">Arabic, English</span>
-                  <span class="chip gold p-chip anim" style="--d:2.9s">Notice · 30 days</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel" data-p="2">
-              <div class="p-match">
-                <div class="gauge" data-auto="91">
-                  <svg viewBox="0 0 120 120" width="132" height="132"><circle class="g-bg" cx="60" cy="60" r="52"/><circle class="g-fg" cx="60" cy="60" r="52"/></svg>
-                  <div class="g-val"><span class="g-num">0</span><small>MATCH</small></div>
-                </div>
-                <div class="p-ev">
-                  <div><i data-lucide="check"></i>SOCPA certified — cited, CV p.1</div>
-                  <div><i data-lucide="check"></i>Month-end close, listed company — cited</div>
-                  <div><i data-lucide="check"></i>Riyadh, 30-day notice — hard filter passed</div>
-                  <div><i data-lucide="alert-circle"></i>No Oracle Fusion — gap flagged</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="panel" data-p="3">
-              <div class="p-portal">
-                <div class="p-row anim" style="--d:.1s"><span><b>Sara Al-Harbi</b><small>SENT TUE · VIEWED WED 09:14</small></span><span class="chip green">Interview</span><time class="mono" style="font-size:11px;color:var(--fg3)">91</time></div>
-                <div class="p-row anim" style="--d:.7s"><span><b>Omar Mansour</b><small>SENT TUE · VIEWED WED 09:16</small></span><span class="chip amber">Reviewing</span><time class="mono" style="font-size:11px;color:var(--fg3)">88</time></div>
-                <div class="p-row anim" style="--d:1.3s"><span><b>Lina Khoury</b><small>SENT TUE · CLIENT SAID NO · "TOO JUNIOR"</small></span><span class="chip">Declined</span><time class="mono" style="font-size:11px;color:var(--fg3)">84</time></div>
-                <div class="p-row anim" style="--d:1.9s"><span><b>Client feedback logged</b><small>DATED WHEN THE CLIENT SAID IT, NOT WHEN YOU TYPED IT</small></span><span class="chip gold">Auto</span><span></span></div>
-              </div>
-            </div>
-
-            <div class="panel" data-p="4">
-              <div class="p-priv">
-                <div class="priv-line">Sara Al-Harbi · <mark data-r="[email]" style="--d:.2s">sara.h@example.com</mark> · <mark data-r="[phone]" style="--d:.6s">+966 50 123 4567</mark></div>
-                <div class="priv-line">Riyadh <mark data-r="[postcode]" style="--d:1s">12345</mark> · <mark data-r="[url]" style="--d:1.4s">linkedin.com/in/sara-h</mark></div>
-                <div class="priv-line" style="color:var(--fg3)">Senior Accountant, SOCPA, five years month-end close at a listed FMCG group. Led the IFRS 16 transition…</div>
-                <div class="priv-cap">Redacted before the model is called · restored after</div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="feat-list">
-        <article class="feature" data-idx="0">
-          <div class="f-head"><span class="f-idx">01</span><span class="f-tag">Assistant</span></div>
-          <h3>Talk to your database.</h3>
-          <p>The assistant lives on the home screen, not in a side tab. Ask who fits a role, what a client said last week, or which roles are stuck. It answers from your data, drafts the next step, and waits for your approval before anything goes out.</p>
-          <div class="f-visual"></div>
-        </article>
-        <article class="feature" data-idx="1">
-          <div class="f-head"><span class="f-idx">02</span><span class="f-tag">CV reading</span></div>
-          <h3>Every CV, read in full.</h3>
-          <p>Upload a PDF, a Word file, a photo of a printed CV, or a spreadsheet of 500 people. Recruit extracts employer, seniority, function, skills, languages, education, nationality, visa, notice period and links — and spots duplicates before they become two records.</p>
-          <div class="f-visual"></div>
-        </article>
-        <article class="feature" data-idx="2">
-          <div class="f-head"><span class="f-idx">03</span><span class="f-tag">Matching</span></div>
-          <h3>Scores that show their work.</h3>
-          <p>Three stages: hard filters, similarity ranking, then the model reads the finalists and scores each one. Every score comes with cited evidence and the gaps. Your recruiter argues with reasons, and the client sees why.</p>
-          <div class="f-visual"></div>
-        </article>
-        <article class="feature" data-idx="3">
-          <div class="f-head"><span class="f-idx">04</span><span class="f-tag">Client portal</span></div>
-          <h3>Clients say yes or no. Logged.</h3>
-          <p>A client gets a signed link, sees only their roles and only the candidates you chose to send. Feedback is dated by when the client said it. No more "did they see the shortlist?" — you know.</p>
-          <div class="f-visual"></div>
-        </article>
-        <article class="feature" data-idx="4">
-          <div class="f-head"><span class="f-idx">05</span><span class="f-tag">Privacy shield</span></div>
-          <h3>Contact details never leave the building.</h3>
-          <p>Emails, phone numbers, addresses and links are lifted out of every CV before the model is called and put back after. Each agency's data is isolated at the database level. Deleting a candidate deletes the files, not just the row.</p>
-          <div class="f-visual"></div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ ALL-IN-ONE ============ -->
-<section id="system">
-  <div class="wrap">
-    <header class="sec-head">
-      <div class="tag rv"><i></i>03 / All in one</div>
-      <h2 class="rv">Your clients, roles, candidates and placements. One system.</h2>
-      <p class="lead rv">No CRM on one tab and ATS on another. A role belongs to a client, a candidate belongs to the pool, and every email, task and interview hangs off the record it is about.</p>
-    </header>
-    <div class="grid3" data-stagger>
-      <div class="card rv"><span class="ic"><i data-lucide="users"></i></span><h4>Candidates</h4><p>One database, never two. Filter and sort on every field, save views, share a filtered link. Add by CV, by hand, or by spreadsheet.</p></div>
-      <div class="card rv"><span class="ic"><i data-lucide="briefcase"></i></span><h4>Roles &amp; pipeline</h4><p>Agency-named stages, a board per role, collaborators, close reasons — won, lost, no-hire — so a role cannot end without saying why.</p></div>
-      <div class="card rv"><span class="ic"><i data-lucide="building-2"></i></span><h4>Clients</h4><p>Companies, contacts, open roles, what they said and when. The portal is the same record from the client's side.</p></div>
-      <div class="card rv"><span class="ic"><i data-lucide="mail"></i></span><h4>Mailbox</h4><p>Threaded mail on the candidate and the role. Drafts written from the CV and the brief, sent only after you approve.</p></div>
-      <div class="card rv"><span class="ic"><i data-lucide="file-text"></i></span><h4>Submission packs &amp; briefings</h4><p>Candidate packs for clients, interview briefings for recruiters, printable job descriptions in a client and an internal version.</p></div>
-      <div class="card rv"><span class="ic"><i data-lucide="bar-chart-3"></i></span><h4>Reports in plain English</h4><p>Ask "cost per hire this quarter by client" and get the table. Funnel, closed-and-lost, activity — exported to Excel or CSV.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ WHITE LABEL ============ -->
-<section id="whitelabel" style="padding-top:40px">
-  <div class="wrap">
-    <div class="split">
-      <div>
-        <div class="tag rv"><i></i>04 / White label</div>
-        <h2 class="rv">Your name on the door.</h2>
-        <p class="lead rv">Run Recruit under your own brand for your clients and candidates — or resell it to agencies you serve. Logo, colours, domain, application form and client portal all carry your identity.</p>
-        <ul class="rv">
-          <li><i data-lucide="check"></i>Your logo, colours and domain across the app, the apply page and the client portal</li>
-          <li><i data-lucide="check"></i>Four colour themes and two typeface sets built in — or your own</li>
-          <li><i data-lucide="check"></i>Reseller tier: create agencies, each isolated, each with its own admin</li>
-          <li><i data-lucide="check"></i>Emails go from your domain, not ours</li>
-        </ul>
-      </div>
-      <div class="brandbox rv" id="brandbox">
-        <div class="bb-top"><span class="bb-logo" id="bbLogo">N</span><span class="bb-name" id="bbName">Northwind Talent</span><span class="bb-dom" id="bbDom">app.northwind.sa</span></div>
-        <div class="bb-rows">
-          <div class="bb-row"><i></i>Today · 14 open roles · 6 waiting on clients</div>
-          <div class="bb-row"><i></i>Ready to call · 9 candidates above 85</div>
-          <div class="bb-row"><i></i>Client portal · 3 shortlists viewed this week</div>
-        </div>
-        <div class="bb-pick"><span>Try a brand</span>
-          <button class="sw on" data-b="Northwind Talent|N|app.northwind.sa|#D4AF5A|#14120C" style="background:#D4AF5A" aria-label="Gold"></button>
-          <button class="sw" data-b="Meridian Search|M|hire.meridian.ae|#5CE8D5|#04201C" style="background:#5CE8D5" aria-label="Teal"></button>
-          <button class="sw" data-b="Cedar Partners|C|talent.cedar.qa|#E06A52|#2A0E08" style="background:#E06A52" aria-label="Coral"></button>
-          <button class="sw" data-b="Halo Staffing|H|app.halo.co.uk|#E8E4D9|#14120C" style="background:#E8E4D9" aria-label="Platinum"></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SCALE ============ -->
-<section id="scale" style="padding-top:60px">
-  <div class="wrap">
-    <div class="split">
-      <div class="tenants rv" style="order:1">
-        <div class="tenant"><span class="bb-logo" style="background:var(--bg3);color:var(--gold);border:1px solid var(--line2)">N</span><span><span class="n">Northwind Talent</span><small>12 recruiters · 3 managers · 1 admin</small></span><span class="k">1,284<small>candidates</small></span></div>
-        <div class="tenant"><span class="bb-logo" style="background:var(--bg3);color:var(--gold);border:1px solid var(--line2)">M</span><span><span class="n">Meridian Search</span><small>4 recruiters · 1 admin</small></span><span class="k">6,410<small>candidates</small></span></div>
-        <div class="tenant"><span class="bb-logo" style="background:var(--bg3);color:var(--gold);border:1px solid var(--line2)">C</span><span><span class="n">Cedar Partners</span><small>22 recruiters · 6 managers · 2 admins</small></span><span class="k">31,902<small>candidates</small></span></div>
-        <div class="tenant" style="border-style:dashed"><span class="bb-logo" style="background:none;color:var(--fg3);border:1px dashed var(--line2)">+</span><span><span class="n" style="color:var(--fg2)">Next agency</span><small>ISOLATED IN MINUTES · NOTHING SHARED</small></span><span></span></div>
-      </div>
-      <div style="order:2">
-        <div class="tag rv"><i></i>05 / Scale</div>
-        <h2 class="rv">Built to scale agencies, not just seats.</h2>
-        <p class="lead rv">One recruiter or two hundred. One office or a group of agencies. Recruit keeps every agency's data separate at the database level, gives each the same four roles, and runs the heavy work — reading, matching, sending — on a queue so nobody waits.</p>
-        <ul class="rv">
-          <li><i data-lucide="check"></i>Four roles — recruiter, manager, admin, client — with a visible capability matrix</li>
-          <li><i data-lucide="check"></i>Every action logged: who changed what, when, from where</li>
-          <li><i data-lucide="check"></i>Bulk import 500 CVs or roles at a time; resumable if it stops</li>
-          <li><i data-lucide="check"></i>Managers see what the AI cost this month, per agency</li>
-          <li><i data-lucide="check"></i>Read your data from Claude or ChatGPT through MCP — the same permissions apply</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ SECURITY ============ -->
-<section id="security" style="padding-top:40px">
-  <div class="wrap">
-    <header class="sec-head">
-      <div class="tag rv"><i></i>06 / Trust</div>
-      <h2 class="rv">Serious about candidate data.</h2>
-    </header>
-    <div class="sec-band" data-stagger>
-      <div class="sec-item rv"><i data-lucide="eye-off"></i><b>Redaction before AI</b><span>Emails, phones, addresses and links removed before any model call, restored after.</span></div>
-      <div class="sec-item rv"><i data-lucide="server"></i><b>Hosted in the EU</b><span>Database and files in Frankfurt. Compute pinned to the same region.</span></div>
-      <div class="sec-item rv"><i data-lucide="layers"></i><b>Agency isolation</b><span>Row-level security in the database, not just in the app. One agency cannot read another.</span></div>
-      <div class="sec-item rv"><i data-lucide="trash-2"></i><b>Real erasure</b><span>Admin-only delete removes the record, the files and the vectors. Logged first.</span></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ TESTIMONIAL ============ -->
-<section class="quote-sec" style="padding-top:60px">
+<section class="quote-sec">
   <div class="wrap" style="position:relative">
     <div class="q-mark" aria-hidden="true">"</div>
     <div class="tag rv" style="margin-bottom:30px"><i></i>Field note / design partner</div>
@@ -812,75 +608,21 @@ html.has-cursor,html.has-cursor *{cursor:none!important}
   </div>
 </section>
 
-<!-- ============ PRICING ============ -->
-<section id="pricing">
+<!-- ============ EXPLORE ============ -->
+<section id="explore" style="padding-top:40px">
   <div class="wrap">
-    <header class="sec-head center">
-      <div class="tag rv" style="justify-content:center"><i></i>07 / Pricing</div>
-      <h2 class="rv">Priced per recruiter.<br>Paid back on the first placement.</h2>
+    <header class="sec-head">
+      <div class="tag rv"><i></i>02 / Explore</div>
+      <h2 class="rv">One assistant. Six ways to look at it.</h2>
+      <p class="lead rv">Everything below is a full page — go deeper on whichever part of Recruit matters to you right now.</p>
     </header>
-    <div class="bill-row rv">
-      <div class="seg" id="billing"><span class="seg-ind"></span><button class="on" data-bill="m">Monthly</button><button data-bill="y">Annual<span class="save">−20%</span></button></div>
-    </div>
-    <div class="plans" data-stagger>
-      <div class="plan rv">
-        <h4>Starter</h4>
-        <div class="price"><span class="val" data-m="49" data-y="39">$49</span><span class="per">/ recruiter / month</span></div>
-        <div class="bill-note" data-note>Billed monthly</div>
-        <ul>
-          <li><i data-lucide="check"></i>Assistant, CV reading, matching with reasons</li>
-          <li><i data-lucide="check"></i>Candidates, roles, clients, pipeline board</li>
-          <li><i data-lucide="check"></i>Client portal &amp; public apply page</li>
-          <li><i data-lucide="check"></i>Up to 5 recruiters</li>
-        </ul>
-        <a class="btn ghost" href="#access">Start with Starter</a>
-      </div>
-      <div class="plan featured rv">
-        <span class="badge">MOST AGENCIES</span>
-        <h4>Agency</h4>
-        <div class="price"><span class="val" data-m="89" data-y="71">$89</span><span class="per">/ recruiter / month</span></div>
-        <div class="bill-note" data-note>Billed monthly</div>
-        <ul>
-          <li><i data-lucide="check"></i>Everything in Starter</li>
-          <li><i data-lucide="check"></i>Mailbox, submission packs, interview briefings</li>
-          <li><i data-lucide="check"></i>Reports in plain English, Excel/CSV export</li>
-          <li><i data-lucide="check"></i>Bulk import, saved views, activity log</li>
-          <li><i data-lucide="check"></i>MCP access from Claude / ChatGPT</li>
-          <li><i data-lucide="check"></i>Unlimited recruiters</li>
-        </ul>
-        <a class="btn primary" href="#access">Book a demo</a>
-      </div>
-      <div class="plan rv">
-        <h4>White label</h4>
-        <div class="price"><span class="val">Custom</span></div>
-        <div class="bill-note">Annual contract</div>
-        <ul>
-          <li><i data-lucide="check"></i>Everything in Agency</li>
-          <li><i data-lucide="check"></i>Your brand, domain and email sender</li>
-          <li><i data-lucide="check"></i>Reseller console — create isolated agencies</li>
-          <li><i data-lucide="check"></i>Your own AI keys or ours, your choice</li>
-          <li><i data-lucide="check"></i>Dedicated onboarding and data migration</li>
-        </ul>
-        <a class="btn ghost" href="#access">Talk to us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section id="faq" style="padding-top:40px">
-  <div class="wrap">
-    <header class="sec-head center">
-      <div class="tag rv" style="justify-content:center"><i></i>08 / Questions</div>
-      <h2 class="rv">Still deciding?</h2>
-    </header>
-    <div class="faq rv">
-      <details open><summary>Who is Recruit for?<i data-lucide="plus"></i></summary><p>Recruitment agencies and executive search firms — permanent and contract. From a founder working alone to a group of agencies under one brand. In-house teams use it too, but the client portal, agency isolation and white label exist because agencies asked for them.</p></details>
-      <details><summary>How does "shortlist in 30 seconds" actually work?<i data-lucide="plus"></i></summary><p>Three stages. Hard filters (location, right to work, availability) cut the pool. Similarity ranking finds the closest CVs to the brief. Then the model reads the finalists in full and scores each one, citing the lines that earned the score and naming the gaps. The heavy work runs on a queue, so the screen never freezes.</p></details>
-      <details><summary>Does candidate data go to OpenAI or Google?<i data-lucide="plus"></i></summary><p>Not contact details. Emails, phone numbers, addresses and links are removed before the model is called and put back afterwards. Only the professional content of a CV is read. On the White label tier you can bring your own model keys.</p></details>
-      <details><summary>Can we migrate from Recruit CRM, Bullhorn or a spreadsheet?<i data-lucide="plus"></i></summary><p>Yes. Spreadsheet import (CSV and Excel) is built in and resumable. For a full migration from another ATS we map your fields and stages, import in batches, and run duplicate detection as we go.</p></details>
-      <details><summary>Is it GDPR-ready?<i data-lucide="plus"></i></summary><p>Data lives in Frankfurt. Every agency is isolated at the database level. Deletion removes the record, the files and the search vectors — and logs the erasure first. Consent capture on the apply form is configurable per agency.</p></details>
-      <details><summary>What does white label include?<i data-lucide="plus"></i></summary><p>Your logo, colours, domain and email sender across the app, the apply page and the client portal. Reseller partners get a console to create agencies, each isolated with its own admin, billed under your name.</p></details>
+    <div class="grid3" data-stagger style="grid-template-columns:repeat(3,1fr)">
+      <a class="card rv" href="/platform"><span class="ic"><i data-lucide="sparkles"></i></span><h4>Platform &amp; AI engine</h4><p>The assistant, the CV reader, the matcher, the client portal and the privacy shield — five things working as one.</p></a>
+      <a class="card rv" href="/all-in-one"><span class="ic"><i data-lucide="layers"></i></span><h4>All-in-one ATS + CRM</h4><p>Candidates, roles, clients, pipeline, mailbox and reports in one system — no more switching tabs.</p></a>
+      <a class="card rv" href="/white-label"><span class="ic"><i data-lucide="palette"></i></span><h4>White label &amp; reseller</h4><p>Your logo, colours and domain across the app, the apply page and the client portal.</p></a>
+      <a class="card rv" href="/security"><span class="ic"><i data-lucide="shield-check"></i></span><h4>Security &amp; trust</h4><p>EU-hosted, agency-isolated, and contact details are redacted before any model call.</p></a>
+      <a class="card rv" href="/pricing"><span class="ic"><i data-lucide="gauge"></i></span><h4>Pricing &amp; plans</h4><p>Priced per recruiter, paid back on the first placement. Starter, Agency and White Label.</p></a>
+      <a class="card rv" href="/demo"><span class="ic"><i data-lucide="calendar"></i></span><h4>Book a demo</h4><p>Bring a real brief. Watch Recruit shortlist your own database live, in thirty minutes.</p></a>
     </div>
   </div>
 </section>
@@ -919,9 +661,9 @@ html.has-cursor,html.has-cursor *{cursor:none!important}
         <p>The AI-first ATS + CRM for recruitment agencies. Ask for a candidate, get a shortlist with reasons.</p>
         <div class="f-status"><span class="live-dot"></span>All systems operational</div>
       </div>
-      <div class="f-col"><h6>Product</h6><a href="#platform">Assistant</a><a href="#platform">Matching</a><a href="#system">All-in-one</a><a href="#whitelabel">White label</a><a href="#pricing">Pricing</a></div>
-      <div class="f-col"><h6>Trust</h6><a href="#security">Security</a><a href="#security">Data handling</a><a href="#faq">GDPR</a><a href="#faq">FAQ</a></div>
-      <div class="f-col"><h6>Company</h6><a href="#access">About</a><a href="#access">Contact</a><a href="https://recruit-two-pi.vercel.app" target="_blank" rel="noopener">Sign in</a></div>
+      <div class="f-col"><h6>Product</h6><a href="/platform">Assistant</a><a href="/platform">Matching</a><a href="/all-in-one">All-in-one</a><a href="/white-label">White label</a><a href="/pricing">Pricing</a></div>
+      <div class="f-col"><h6>Trust</h6><a href="/security">Security</a><a href="/security">Data handling</a><a href="/security">GDPR</a><a href="/pricing">FAQ</a></div>
+      <div class="f-col"><h6>Company</h6><a href="#access">About</a><a href="/demo">Contact</a><a href="https://recruit-two-pi.vercel.app" target="_blank" rel="noopener">Sign in</a></div>
     </div>
     <div class="f-bottom">
       <span>© 2026 Recruit. Frankfurt · Riyadh · London</span>
@@ -972,7 +714,6 @@ new IntersectionObserver(es=>es.forEach(e=>{accessVis=e.isIntersecting;updateSti
 function updateSticky(){sticky.classList.toggle('show',scrollY>heroEl.offsetHeight*.85&&!accessVis)}
 let sTick=false;
 addEventListener('scroll',()=>{if(sTick)return;sTick=true;requestAnimationFrame(()=>{const max=document.documentElement.scrollHeight-innerHeight;bar.style.transform=`scaleX(${max>0?scrollY/max:0})`;nav.classList.toggle('scrolled',scrollY>10);updateSticky();sTick=false})},{passive:true});
-(function(){const links=$$('.nav-links a[data-spy]');const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.dataset.spy===e.target.id))}),{rootMargin:'-40% 0px -55% 0px'});['platform','system','whitelabel','pricing'].forEach(id=>{const s=document.getElementById(id);if(s)ob.observe(s)})})();
 
 /* counters */
 const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);const n=e.target,to=+n.dataset.to;tween(0,to,1600,v=>n.textContent=Math.round(v))}),{threshold:.5});
@@ -1016,26 +757,6 @@ new IntersectionObserver(es=>es.forEach(e=>{run=e.isIntersecting&&!RM;if(run)req
   (function loop(){cx=lerp(cx,tx,.07);cy=lerp(cy,ty,.07);if(hover||Math.abs(cx)>.001||Math.abs(cy)>.001)mock.style.transform=`rotateX(${(-cy*4).toFixed(2)}deg) rotateY(${(cx*6).toFixed(2)}deg)`;requestAnimationFrame(loop)})();
 })();
 
-/* features sticky stage */
-(function(){const feats=$$('.feature'),panels=$$('.panel'),body=$('#stageBody');
-  const titles=['Live / Assistant','Live / CV reading','Live / Matching','Live / Client portal','Live / Privacy shield'];
-  const sT=$('#stageTitle'),sI=$('#stageIdx');
-  function animGauge(g,score){if(!g)return;const fg=g.querySelector('.g-fg'),num=g.querySelector('.g-num');fg.style.transition='none';fg.style.strokeDashoffset=326.7;void g.offsetWidth;fg.style.transition='stroke-dashoffset 1.1s cubic-bezier(.22,1,.36,1)';fg.style.strokeDashoffset=326.7*(1-score/100);tween(0,score,1100,v=>num.textContent=Math.round(v))}
-  function setActive(i){feats.forEach((f,k)=>f.classList.toggle('active',k===i));panels.forEach((p,k)=>p.classList.toggle('on',k===i));sT.textContent=titles[i];sI.textContent=`0${i+1} / 05`;const g=panels[i].querySelector('.gauge');if(g)animGauge(g,91)}
-  const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)setActive(+e.target.dataset.idx)}),{rootMargin:'-42% 0px -52% 0px'});
-  feats.forEach(f=>ob.observe(f));
-  const visuals=$$('.f-visual'),mq=matchMedia('(max-width:940px)');
-  function place(){panels.forEach((p,i)=>{if(mq.matches){visuals[i].appendChild(p);p.classList.add('inline')}else{body.appendChild(p);p.classList.remove('inline')}})}
-  place();mq.addEventListener('change',place)})();
-
-/* white label brand switcher */
-$$('.sw').forEach(b=>b.addEventListener('click',()=>{$$('.sw').forEach(x=>x.classList.toggle('on',x===b));const [name,l,dom,c,on]=b.dataset.b.split('|');$('#bbName').textContent=name;$('#bbLogo').textContent=l;$('#bbLogo').style.background=c;$('#bbLogo').style.color=on;$('#bbDom').textContent=dom;$$('#brandbox .bb-row i').forEach(i=>i.style.background=c)}));
-
-/* segmented */
-function moveInd(seg){const on=seg.querySelector('button.on'),ind=seg.querySelector('.seg-ind');if(!on||!ind)return;ind.style.width=on.offsetWidth+'px';ind.style.transform=`translateX(${on.offsetLeft-4}px)`}
-$$('.seg').forEach(moveInd);addEventListener('resize',()=>$$('.seg').forEach(moveInd));addEventListener('load',()=>$$('.seg').forEach(moveInd));
-(function(){const seg=$('#billing');let bill='m';$$('button',seg).forEach(b=>b.addEventListener('click',()=>{if(b.dataset.bill===bill)return;bill=b.dataset.bill;$$('button',seg).forEach(x=>x.classList.toggle('on',x===b));moveInd(seg);$$('[data-m]').forEach(p=>{const to=+(bill==='m'?p.dataset.m:p.dataset.y),from=parseInt(p.textContent.replace(/\D/g,''),10)||0;tween(from,to,500,v=>p.textContent='$'+Math.round(v))});$$('[data-note]').forEach(n=>n.textContent=bill==='y'?'Billed annually · 2 months free':'Billed monthly')}))})();
-
 /* cta form — swap action for a real endpoint when ready */
 const reMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 $('#accessForm').addEventListener('submit',e=>{e.preventDefault();const mail=$('#accessMail'),err=$('#accessErr');if(!reMail.test(mail.value.trim())){err.hidden=false;e.currentTarget.classList.add('shake');setTimeout(()=>e.currentTarget.classList.remove('shake'),450);return}err.hidden=true;
@@ -1044,7 +765,7 @@ $('#accessForm').addEventListener('submit',e=>{e.preventDefault();const mail=$('
 
 /* command palette */
 (function(){const pal=$('#pal'),input=$('#palInput'),list=$('#palList');const go=id=>{const s=$(id);if(s)s.scrollIntoView({behavior:RM?'auto':'smooth'})};
-  const cmds=[{i:'sparkles',l:'Why AI-first, not AI-enabled',h:'01',f:()=>go('#why')},{i:'scan-text',l:'See the platform',h:'02',f:()=>go('#platform')},{i:'layers',l:'All-in-one system',h:'03',f:()=>go('#system')},{i:'palette',l:'White label',h:'04',f:()=>go('#whitelabel')},{i:'trending-up',l:'Scale agencies',h:'05',f:()=>go('#scale')},{i:'shield-check',l:'Security & data',h:'06',f:()=>go('#security')},{i:'gauge',l:'Pricing',h:'07',f:()=>go('#pricing')},{i:'mail',l:'Book a demo',h:'09',f:()=>{go('#access');setTimeout(()=>$('#accessMail').focus(),700)}},{i:'external-link',l:'Open the app',h:'SIGN IN',f:()=>open('https://recruit-two-pi.vercel.app','_blank')},{i:'arrow-up',l:'Back to top',h:'HOME',f:()=>go('#top')}];
+  const cmds=[{i:'sparkles',l:'Why AI-first, not AI-enabled',h:'01',f:()=>go('#why')},{i:'scan-text',l:'See the platform',h:'02',f:()=>location.href='/platform'},{i:'layers',l:'All-in-one system',h:'03',f:()=>location.href='/all-in-one'},{i:'palette',l:'White label',h:'04',f:()=>location.href='/white-label'},{i:'shield-check',l:'Security & data',h:'05',f:()=>location.href='/security'},{i:'gauge',l:'Pricing',h:'06',f:()=>location.href='/pricing'},{i:'mail',l:'Book a demo',h:'07',f:()=>location.href='/demo'},{i:'external-link',l:'Open the app',h:'SIGN IN',f:()=>open('https://recruit-two-pi.vercel.app','_blank')},{i:'arrow-up',l:'Back to top',h:'HOME',f:()=>go('#top')}];
   let filtered=cmds.slice(),active=0;
   function render(){const q=input.value.trim().toLowerCase();filtered=cmds.filter(c=>c.l.toLowerCase().includes(q));active=clamp(active,0,Math.max(0,filtered.length-1));list.innerHTML=filtered.length?filtered.map((c,k)=>`<button class="cmd${k===active?' on':''}" data-k="${k}"><i data-lucide="${c.i}"></i><span>${c.l}</span><span class="h">${c.h}</span></button>`).join(''):'<div class="pal-empty">Nothing matches — try "pricing" or "demo".</div>';if(window.lucide)lucide.createIcons()}
   function exec(k){const c=filtered[k];if(!c)return;close();setTimeout(c.f,120)}
